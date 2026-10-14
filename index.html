@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dar l'Artisan - Artisanat marocain</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            custom: {
+              primary: '#244331',  
+              secondary: '#A8441D',
+              bg: '#F8F1E7',      
+              text: '#2C1B13',     
+              surface: '#EAD9C5',  
+              accent: '#D6A16E',  
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-200 font-sans text-custom-text min-h-screen antialiased">
+
+  
+  <div class="max-w-[420px] mx-auto bg-custom-bg min-h-screen shadow-2xl relative overflow-x-hidden">
+    
+        <header class="flex items-center justify-between px-4 py-3 bg-white border-b border-custom-surface sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <div class="text-custom-secondary text-xl">
+            <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div>
+            <span class="font-serif font-bold text-lg leading-none block text-custom-text">Dar l'Artisan</span>
+            <span class="text-[9px] tracking-widest text-custom-accent uppercase font-medium">artisanat marocain</span>
+            </div>
+        </div>
+
+        
+        <div class="flex items-center space-x-3 text-custom-text">
+            
+            <button type="button" 
+                    aria-label="Recherche" 
+                    class="p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+
+            <button type="button" 
+                    aria-label="Panier" 
+                    class="relative p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="absolute top-0 -right-1 bg-custom-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+                0
+            </span>
+            </button>
+        </header> 
+        <main>
+
+        </main> 
+        <footer class="bg-[#244331] text-white text-sm">
+
+        <!-- Main footer content -->
+        <div class="max-w-6xl mx-auto px-4 py-10 
+                    grid grid-cols-1 gap-8
+                    md:grid-cols-2 md:gap-10
+                    lg:grid-cols-4 lg:gap-8">
+
+            <!-- 1. Brand + Social -->
+            <div class="flex flex-col items-center text-center 
+                        md:items-start md:text-left gap-4">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="./images/logo-white-Darartisan.png" alt="Logo" class="w-12 h-12">
+                <div>
+                <h2 class="text-lg font-semibold">Dar l'Artisan</h2>
+                <p class="text-xs text-gray-300">Artisanat marocain</p>
+                </div>
+            </a>
+            <p class="text-gray-300 text-sm max-w-xs">
+                Des créations uniques, pour un quotidien plus chaleureux.
+            </p>
+            <!-- Social icons -->
+            <div class="flex gap-4 mt-2">
+                <a href="https://www.instagram.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
+                <img src="./images/instagram-white-icon.png" class="w-6 h-6" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
+                <img src="./images/facebook-app-round-white-icon.png" class="w-6 h-6" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/darlartisan" target="_blank" class="hover:scale-110 transition">
+                <img src="./images/x-social-media-white-icon.png" class="w-6 h-6" alt="X">
+                </a>
+                <a href="https://www.youtube.com/darlartisan" target="_blank" class="hover:scale-110 transition">
+                <img src="./images/youtube-app-white-icon.png" class="w-6 h-6" alt="YouTube">
+                </a>
+            </div>
+            </div>
+
+            <!-- 2. Navigation -->
+            <div class="flex flex-col items-center text-center 
+                        md:items-start md:text-left gap-3">
+            <h3 class="font-semibold text-base mb-1">Navigation</h3>
+            <a href="index.html" class="hover:text-amber-300 transition">Accueil</a>
+            <a href="catalogue.html" class="hover:text-amber-300 transition">Catalogue</a>
+            <a href="about.html" class="hover:text-amber-300 transition">À propos</a>
+            <a href="contact.html" class="hover:text-amber-300 transition">Contact</a>
+            </div>
+
+            <!-- 3. Informations -->
+            <div class="flex flex-col items-center text-center 
+                        md:items-start md:text-left gap-3">
+            <h3 class="font-semibold text-base mb-1">Informations</h3>
+            <a href="#" class="hover:text-amber-300 transition">Livraison</a>
+            <a href="#" class="hover:text-amber-300 transition">Retours</a>
+            <a href="#" class="hover:text-amber-300 transition">Paiement sécurisé</a>
+            <a href="#" class="hover:text-amber-300 transition">FAQ</a>
+            </div>
+
+            <!-- 4. Contact -->
+            <div class="flex flex-col items-center text-center 
+                        md:items-start md:text-left gap-3">
+            <h3 class="font-semibold text-base mb-1">Contact</h3>
+            <a href="tel:+212612345678" class="flex items-center gap-2 hover:text-amber-300 transition">
+                <span>📞</span> +212 6 12 34 56 78
+            </a>
+            <a href="mailto:contact@darlartisan.ma" class="flex items-center gap-2 hover:text-amber-300 transition">
+                <span>✉️</span> contact@darlartisan.ma
+            </a>
+            <a href="https://www.google.com/maps/place/Safi,+Maroc" target="_blank" 
+                class="flex items-center gap-2 hover:text-amber-300 transition">
+                <span>📍</span> Safi, Maroc
+            </a>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="border-t border-white/20">
+            <div class="max-w-6xl mx-auto px-4 py-4 
+                        flex flex-col items-center gap-2 text-xs text-gray-300
+                        md:flex-row md:justify-between">
+            <p>© 2026 Dar l'Artisan. Tous droits réservés.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition">Conditions générales</a>
+                <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+            </div>
+            </div>
+        </div>
+        </footer>  
+        
+    </body>
+</html>    

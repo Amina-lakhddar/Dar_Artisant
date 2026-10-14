@@ -1,4 +1,5 @@
 {
+
   "name": "dar_artisant",
   "version": "1.0.0",
   "description": "",
@@ -18,6 +19,7 @@
     "url": "https://github.com/Amina-lakhddar/Dar_Artisant/issues"
   },
   "homepage": "https://github.com/Amina-lakhddar/Dar_Artisant#readme",
+
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
