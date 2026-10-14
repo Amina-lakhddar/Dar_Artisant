@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dar l'Artisan - Artisanat marocain</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            custom: {
+              primary: '#244331',  
+              secondary: '#A8441D',
+              bg: '#F8F1E7',      
+              text: '#2C1B13',     
+              surface: '#EAD9C5',  
+              accent: '#D6A16E',  
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-200 font-sans text-custom-text min-h-screen antialiased">
+
+  
+  <div class="max-w-[420px] mx-auto bg-custom-bg min-h-screen shadow-2xl relative overflow-x-hidden">
+
+    
+    <header class="flex items-center justify-between px-4 py-3 bg-white border-b border-custom-surface sticky top-0 z-50">
+      <div class="flex items-center space-x-2">
+        <div class="text-custom-secondary text-xl">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <span class="font-serif font-bold text-lg leading-none block text-custom-text">Dar l'Artisan</span>
+          <span class="text-[9px] tracking-widest text-custom-accent uppercase font-medium">artisanat marocain</span>
+        </div>
+      </div>
+
+    
+      <div class="flex items-center space-x-3 text-custom-text">
+        
+        <button type="button" 
+                aria-label="Recherche" 
+                class="p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+
+        <button type="button" 
+                aria-label="Panier" 
+                class="relative p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="absolute top-0 -right-1 bg-custom-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+            0
+          </span>
+        </button>
