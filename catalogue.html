@@ -10,38 +10,160 @@
     <header>
     
     </header>
-    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <section class="test-bg h-screen">
-            <h2>Notre catalogue</h2>
-            <p>Des créations artisanales uniques, pour tous les gouts  et tous les envies.</p>
+    <main>
+
+        <section class="relative flex min-h-[280px] items-center overflow-hidden sm:min-h-[340px] md:min-h-[400px]">
+
+            <img
+                src="images/Lanterne marocaine sous lumière dorée.png"
+                alt="Artisanat marocain traditionnel"
+                class="absolute inset-0 h-full w-full object-cover"
+            >
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-black/10"></div>
+
+            <div class="relative z-10 px-5 py-10 sm:px-10 md:px-16">
+                <h1 class="mb-3 font-serif text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+                    Notre catalogue
+                </h1>
+
+                <p class="max-w-lg text-base leading-relaxed text-white sm:text-lg md:text-2xl">
+                    Des créations artisanales uniques,
+                    pour tous les goûts et toutes les envies.
+                </p>
+            </div>
+
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <article class="overflow-hidden rounded-lg bg-white shadow-md">
-                <img src="images/Lanterne marocaine sous lumière dorée.png" alt="" class="h-48 w-full object-cover">
-                <h3 class="mb-2 text-lg font-bold"><a href="produits/produit1.html">Lanterne en laiton ajouré</a></h3>
-                <p class="mb-4 text-gray-700">350 MAD</p>
-                <button class="w-full rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"><img src="images/cart-line-icon.svg" alt="" width="10px" height="10px"> Ajouter au panier</button>
-            </article>
-            <article>
-                <img src="images/Service à thé marocain artisanal éclatant.png" alt="">
-                <h3><a href="produits/produit2.html">Service à thé marocain</a></h3>
-                <p>420 MAD</p>
-                <button><img src="images/cart-line-icon.svg" alt="" width="10px" height="10px"> Ajouter au panier</button>
-            </article>
-            <article>
-                <img src="images/Bol turquoise aux motifs dorés.png" alt="" width="100px" height="100px">
-                <h3><a href="produits/produit3.html">Bol en céramique</a></h3>
-                <p>120 MAD</p>
-                <button><img src="images/cart-line-icon.svg" alt="" width="10px" height="10px"> Ajouter au panier</button>
-            </article>
-            <article>
-                <img src="images/Tapis berbère chaleureux dans un décor bohème.png" alt="" width="100px" height="100px">
-                <h3><a href="produits/produit4.html">Tapis berbère</a></h3>
-                <p>460 MAD</p>
-                <button><img src="images/cart-line-icon.svg" alt="" width="10px" height="10px"> Ajouter au panier</button>
-            </article>
+
+        <!-- PRODUCTS -->
+        <section class="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 md:px-8">
+
+            <div class="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
+
+                <!-- PRODUIT 1 -->
+                <article class="overflow-hidden rounded-xl border border-[#f2e6d8] bg-[#fffaf4] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <a href="produits/produit1.html">
+                        <img
+                            src="images/Lanterne marocaine sous lumière dorée.png"
+                            alt="Lanterne en laiton ajouré"
+                            class="h-36 w-full object-cover sm:h-48 md:h-56"
+                        >
+                    </a>
+
+                    <div class="p-3 sm:p-4">
+                        <h2 class="mb-2 font-serif text-base font-bold sm:text-xl">
+                            <a href="produits/produit1.html">
+                                Lanterne en laiton ajouré
+                            </a>
+                        </h2>
+
+                        <p class="mb-3 text-lg font-bold text-[#ce3218] sm:text-2xl">
+                            350 MAD
+                        </p>
+
+                        <button type="button"
+                            class="flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#ce3218] px-2 py-2 text-xs font-semibold text-white transition hover:bg-[#a92713] sm:text-base">
+                            <span class="text-lg">🛒</span>
+                            <span>Ajouter au panier</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUIT 2 -->
+                <article class="overflow-hidden rounded-xl border border-[#f2e6d8] bg-[#fffaf4] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <a href="produits/produit2.html">
+                        <img
+                            src="images/Service à thé marocain artisanal éclatant.png"
+                            alt="Service à thé marocain"
+                            class="h-36 w-full object-cover sm:h-48 md:h-56"
+                        >
+                    </a>
+
+                    <div class="p-3 sm:p-4">
+                        <h2 class="mb-2 font-serif text-base font-bold sm:text-xl">
+                            <a href="produits/produit2.html">
+                                Service à thé marocain
+                            </a>
+                        </h2>
+
+                        <p class="mb-3 text-lg font-bold text-[#ce3218] sm:text-2xl">
+                            420 MAD
+                        </p>
+
+                        <button type="button"
+                            class="flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#ce3218] px-2 py-2 text-xs font-semibold text-white transition hover:bg-[#a92713] sm:text-base">
+                            <span class="text-lg">🛒</span>
+                            <span>Ajouter au panier</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUIT 3 -->
+                <article class="overflow-hidden rounded-xl border border-[#f2e6d8] bg-[#fffaf4] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <a href="produits/produit3.html">
+                        <img
+                            src="images/Bol turquoise aux motifs dorés.png"
+                            alt="Bol en céramique"
+                            class="h-36 w-full object-cover sm:h-48 md:h-56"
+                        >
+                    </a>
+
+                    <div class="p-3 sm:p-4">
+                        <h2 class="mb-2 font-serif text-base font-bold sm:text-xl">
+                            <a href="produits/produit3.html">
+                                Bol en céramique
+                            </a>
+                        </h2>
+
+                        <p class="mb-3 text-lg font-bold text-[#ce3218] sm:text-2xl">
+                            120 MAD
+                        </p>
+
+                        <button type="button"
+                            class="flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#ce3218] px-2 py-2 text-xs font-semibold text-white transition hover:bg-[#a92713] sm:text-base">
+                            <span class="text-lg">🛒</span>
+                            <span>Ajouter au panier</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUIT 4 -->
+                <article class="overflow-hidden rounded-xl border border-[#f2e6d8] bg-[#fffaf4] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <a href="produits/produit4.html">
+                        <img
+                            src="images/Tapis berbère chaleureux dans un décor bohème.png"
+                            alt="Tapis berbère"
+                            class="h-36 w-full object-cover sm:h-48 md:h-56"
+                        >
+                    </a>
+
+                    <div class="p-3 sm:p-4">
+                        <h2 class="mb-2 font-serif text-base font-bold sm:text-xl">
+                            <a href="produits/produit4.html">
+                                Tapis berbère
+                            </a>
+                        </h2>
+
+                        <p class="mb-3 text-lg font-bold text-[#ce3218] sm:text-2xl">
+                            460 MAD
+                        </p>
+
+                        <button type="button"
+                            class="flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#ce3218] px-2 py-2 text-xs font-semibold text-white transition hover:bg-[#a92713] sm:text-base">
+                            <span class="text-lg">🛒</span>
+                            <span>Ajouter au panier</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
         </section>
     </main>
+
     <footer class="bg-[#244331] text-white text-sm">
 
         <!-- Main footer content -->
