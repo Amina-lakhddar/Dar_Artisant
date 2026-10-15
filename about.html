@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dar l'Artisan - Artisanat marocain</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            custom: {
+              primary: '#244331',  
+              secondary: '#A8441D',
+              bg: '#F8F1E7',      
+              text: '#2C1B13',     
+              surface: '#EAD9C5',  
+              accent: '#D6A16E',  
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+        </div>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./output.css">
-    </head>
-    <body>
-      <main>
         <!--Hero Section-->
+
         <section class="relative w-full h-96">
 
-            <img class="h-500 w-300" src="./images/hero.jpg" alt="Artisanat marocain"
-           class ="w-full h -full object -cover">
+            <img class="h-500 w-300"
+             src="./images/hero.jpg"
+             alt="Artisanat marocain"
+           class =" absolute inset-0 w-full h -full object-cover">
         
            <div class ="absolute inset-0 flex items-center justify-center bg-black/40">
-            <h1 class ="text-white text-4xl font-bold">
-                A PROPOS DE DAR L’ARTISAN
-                <p>Dar L’artisan célèbre la richesse de l’artisanat marocain et la beauté du savoir-faire traditionnel.
+                <h1 class ="text-white text-3xl font-bold text-center">
+                        A PROPOS DE DAR L’ARTISAN
+                 <p>Dar L’artisan célèbre la richesse de l’artisanat marocain et la beauté du savoir-faire traditionnel.
                     Chaque création raconte une histoire, façonnée avec passion, patience et authenticité. Notre mission
                     est de préserver ce patrimoine et de faire rayonner le talent de nos artisans locaux.
-                </p>
+                 </p>
                  </h1>
             </div>
         </section>
+
         <!--Notre histoire-->
         <section class="">
             <div class="">
@@ -73,5 +107,4 @@
             <img class="h-30 w-30" src="./images/photo engagement.jpg" alt=" engagement de Artisanat marocain">
         </section>
         <!--footer-->
-      </main>
-</html>
+        
