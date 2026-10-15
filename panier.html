@@ -9,11 +9,42 @@
 </head>
 
 <body class="bg-background text-xs w-full
-    md:text-base
-    lg: text-lg  ">
-    <header>
+    md:text-lg
+    lg: text-xl">
+    <!--========================= header ================================-->
+    <header class="flex items-center w-full p-4 px-0 mx-0 gap-17 h-17 ">
+        <!-- Logo -->
+        <a href="index.html" class="flex w-full hover:scale-102 transition-transform" >
+            <img class="h-11 w-11 mx-1" src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
+            <div class="flex flex-col w-full">
+                <p class="text-lg font-bold">Dar L’Artisan</p>
+                <p class="text-gray-600">artisanat marocain</p>
+            </div>   
+        </a>
+        
+        <!-- Icons -->
+        <div class="flex gap-3 justify-end items-center w-2/3 ml-auto">
 
+            <!-- Search: décoration uniquement -->
+            <a href="#search" class="hover:scale-110 transition-transform"><img class="w-7 h-7" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt=""></a>
 
+            <!-- User: décoration uniquement -->
+            <a href="panier.html" class="hover:scale-110 transition-transform"><img class="w-10 h-10" src="./images/109338-removebg-preview.png" alt=""></a>
+
+            <!-- Menu cliquable -->
+            <details class="cursor-pointer">
+                <summary aria-label="Ouvrir le menu">
+                    <img class="w-7 h-7" src="./images/list-square-bullet-icon.svg">
+                </summary>
+                <nav aria-label="Navigation principale " class="absolute right-0 mt-2 w-25 bg-background border border-gray-300 rounded-md shadow-lg z-10">
+                    <a class="block p-2 hover:bg-gray-200" href="index.html">Accueil</a>
+                    <a class="block p-2 hover:bg-gray-200" href="catalogue.html">Catalogue</a>
+                    <a class="block p-2 hover:bg-gray-200" href="about.html">À propos</a>
+                    <a class="block p-2 hover:bg-gray-200" href="contact.html">Contact</a>
+                </nav>
+
+            </details>
+        </div>
     </header>
 
     <main>
@@ -21,7 +52,7 @@
 
             <!-- intro screen --> 
 
-            <div class="bg-[url('./images/moroccan-artisan-backg.jpg')] h-42 bg-cover w-full bg-center mt-5
+            <div class="bg-[url('./images/moroccan-artisan-backg.jpg')] h-42 bg-cover w-full bg-center my-4 mt-1
                 md:h-72 lg:h-96">
                 <div class="bg-gradient-to-r from-[#F5E6D3] via-[#f5f0e6]/85 to-transparent w-3/4 h-full">
                     <h1 class="text-2xl font-bold text-gray-800 p-4">Votre Panier</h1>
@@ -30,7 +61,7 @@
             </div>
 
             <!-- Products in panier -->
-            <div class="w-full p-4 my-10 grid grid-cols-1 gap-3
+            <div class="w-full p-4 my-4 grid grid-cols-1 gap-3
                 md:grid-cols-1 md:gap-6
                 lg:grid-cols-2 lg:gap-10">
                 <div class="bg-[#F8F1E7] w-full p-2 border border-orange-300 rounded-md">
