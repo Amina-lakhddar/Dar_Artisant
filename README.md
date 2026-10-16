@@ -53,3 +53,6 @@ Cette page présente une maquette statique du panier, avec des produits, des qua
 5. Consulter le site
 
     Parcourir les différentes pages : Accueil, Catalogue, Détail du produit, À propos, Contact et Panier.
+
+### lien de Figma
+https://www.figma.com/design/cIEbvemmgjupOYPk2krDrr/Dar-l-artisant?node-id=1-6&t=mHKsFdu4s9Q1xGpm-0
