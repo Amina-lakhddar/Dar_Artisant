@@ -30,11 +30,11 @@
             <img class="h-6 w-6 object-contain" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt="">
 
             <!-- User: décoration uniquement -->
-            <img  class="h-6 w-6 object-contain" src="./images/109338-removebg-preview.png" alt="">
+            <img class="h-6 w-6 object-contain" src="./images/109338-removebg-preview.png" alt="">
 
             <!-- Menu cliquable -->
             <details class="relative">
-                <summary aria-label="ouvrir le menu"  class="list-none cursor-pointer">
+                <summary aria-label="ouvrir le menu" class="list-none cursor-pointer">
                     <img class="h-6 w-6" src="./images/list-square-bullet-icon.svg" alt="" width="23" height="23">
                 </summary>
                 <nav aria-label="absolute right-0 top-full z-10 mt-2 w-40 rounded-lg bg-white p-4 shadow-lg">
@@ -52,119 +52,254 @@
     <main>
         <!---section d'introduction -->
         <section class="bg-background bg-cover bg-center px-4 py-2 w 2/3"
-           style="background-image: linear-gradient(to right, #fffaf5 0%, rgba(255,250,245,0) 65%), url('./images/Lumière\ marocaine\ sur\ table\ artisanale.png');"
+            style="background-image: linear-gradient(to right, #fffaf5 0%, rgba(255,250,245,0) 65%), url('./images/Lumière\ marocaine\ sur\ table\ artisanale.png');"
             <div class="flex flex-col gap-3">
-                <h1 class=" font-serif text-2xl font-bold text-black">Contactez-nous</h1>
-                <p class="text-sm  text-black w-2/3">
-                    Une question, une demande particulière
-                    ou simplement envie de nous écrire ?
-                    Nous sommes là pour vous répondre.
-                </p>
+            <h1 class=" font-serif text-2xl font-bold text-black">Contactez-nous</h1>
+            <p class="text-sm  text-black w-2/3">
+                Une question, une demande particulière
+                ou simplement envie de nous écrire ?
+                Nous sommes là pour vous répondre.
+            </p>
             </div>
         </section>
-        <!-- section du formulaire -->
-        <section class="">
-            <h2>envoyez-nous un message</h2>
-            <p class=""></p>
+ 
+<!-- Section du formulaire -->
+<section class="mx-4 my-3 rounded-lg border border-[#f0e5da] bg-[#fffaf5] p-4 sm:p-6">
 
-        </section>
+    <h2 class="font-serif text-2xl font-bold text-[#171717]">
+        Envoyez-nous un message
+    </h2>
+
+    <p class="mt-2 text-sm leading-6 text-[#292929]">
+        Remplissez le formulaire ci-dessous, nous vous répondrons
+        dans les plus brefs délais.
+    </p>
+
+    <form action="#" method="post" class="mt-5 grid grid-cols-1 gap-x-4 gap-y-5 md:grid-cols-2">
+
+        <!-- Nom complet -->
+        <div class="flex flex-col gap-2">
+            <label for="nom" class="text-sm font-semibold text-[#171717]">
+                Nom complet <span class="text-red-600">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre nom"
+                required
+                class="w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-base placeholder:text-gray-400 focus:border-[#b53213] focus:outline-none focus:ring-2 focus:ring-[#b53213]/20"
+            >
+        </div>
+
+        <!-- E-mail -->
+        <div class="flex flex-col gap-2">
+            <label for="email" class="text-sm font-semibold text-[#171717]">
+                E-mail <span class="text-red-600">*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                required
+                class="w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-base placeholder:text-gray-400 focus:border-[#b53213] focus:outline-none focus:ring-2 focus:ring-[#b53213]/20"
+            >
+        </div>
+
+        <!-- Message -->
+        <div class="flex flex-col gap-2 md:col-span-2">
+            <label for="message" class="text-sm font-semibold text-[#171717]">
+                Message <span class="text-red-600">*</span>
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message..."
+                required
+                class="w-full resize-y rounded-md border border-gray-300 bg-white px-4 py-3 text-base placeholder:text-gray-400 focus:border-[#b53213] focus:outline-none focus:ring-2 focus:ring-[#b53213]/20"
+            ></textarea>
+        </div>
+
+        <!-- Bouton Envoyer -->
+        <button
+            type="submit"
+            class="flex w-full items-center justify-center gap-3 rounded-md bg-red-500 px-4 py-3 font-semibold text-white transition hover:bg-[#92280f] focus:outline-none focus:ring-2 focus:ring-[#b53213] focus:ring-offset-2 md:col-span-2"
+        >
+            <img
+                src="./images/send-icon.png"
+                alt=""
+                class="h-4 w-4 object-contain"
+            >
+
+            <span class="text-black">Envoyer le message</span>
+
+            <span aria-hidden="true" class="text-xl">→</span>
+        </button>
+        <!-- Confidentialité -->
+        <p class="flex items-start justify-center gap-2 text-center text-xs leading-5 text-[#292929] md:col-span-2">
+            <img
+                src="./images/lock-icon.svg"
+                alt=""
+                class="mt-0.5 h-4 w-4 shrink-0"
+            >
+            <span>
+                Vos informations sont protégées et ne seront jamais partagées.
+            </span>
+        </p>
+
+    </form>
+</section>
+
+
 
         <!-- Section des coordonnées -->
-        <section class="contact-info-section">
+        <section class="mx-4 my-3 rounded-lg border border-[#f0e5da] bg-[#fffaf5] p-4 sm:p-5">
 
-            <h2>Nos coordonnées</h2>
-            <!----LIST DE COORDONNEES-->
-            <div class="contact-info-list">
+            <!-- Titre -->
+            <h2 class="font-serif text-2xl font-bold text-[#171717]">
+                Nos coordonnées
+            </h2>
+
+            <!-- Liste des coordonnées -->
+            <div class="mt-4 flex flex-col gap-4">
 
                 <!-- Téléphone -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/phone-call-icon.svg" alt="">
+                <div class="flex items-center gap-4">
+
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f5e5d9]">
+                        <img src="./images/phone-call-icon.svg" alt="" class="h-7 w-7 object-contain">
                     </div>
 
-                    <div class="contact-info-content">
-                        <h3>Téléphone</h3>
-                        <p>+212 6 12 34 56 78</p>
-                        <p>Du lundi au vendredi, 9h - 18h</p>
+                    <div class="flex min-w-0 flex-col">
+                        <h3 class="font-semibold text-[#171717]">Téléphone</h3>
+                        <p class="text-sm text-gray-600">+212 6 12 34 56 78</p>
+                        <p class="text-sm text-gray-600">
+                            Du lundi au vendredi, 9h - 18h
+                        </p>
                     </div>
+
                 </div>
 
                 <!-- E-mail -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/envelope-icon.svg" alt="">
+                <div class="flex items-center gap-4">
+
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f5e5d9]">
+                        <img src="./images/envelope-icon.svg" alt="" class="h-7 w-7 object-contain">
                     </div>
 
-                    <div class="contact-info-content">
-                        <h3>E-mail</h3>
-                        <p>contact@darlartisan.ma</p>
-                        <p>Nous répondons sous 24h.</p>
+                    <div class="flex min-w-0 flex-col">
+                        <h3 class="font-semibold text-[#171717]">E-mail</h3>
+                        <p class="break-all text-sm text-[#171717]">
+                            contact@darlartisan.ma
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Nous répondons sous 24h.
+                        </p>
                     </div>
+
                 </div>
 
                 <!-- Adresse -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/pin-location-icon.svg" alt="">
+                <div class="flex items-center gap-4">
+
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f5e5d9]">
+                        <img src="./images/pin-location-icon.svg" alt="" class="h-7 w-7 object-contain">
                     </div>
 
-                    <div class="contact-info-content">
-                        <h3>Adresse</h3>
-                        <p>Safi, Maroc</p>
+                    <div class="flex min-w-0 flex-col">
+                        <h3 class="font-semibold text-[#171717]">Adresse</h3>
+                        <p class="text-sm text-[#171717]">Safi, Maroc</p>
                     </div>
+
                 </div>
 
                 <!-- Horaires -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/clock-icon.svg" alt="">
+                <div class="flex items-center gap-4">
+
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f5e5d9]">
+                        <img src="./images/clock-icon.svg" alt="" class="h-7 w-7 object-contain">
                     </div>
 
-                    <div class="contact-info-content">
-                        <h3>Horaires</h3>
-                        <p>Lundi - Vendredi : 9h - 18h</p>
-                        <p>Samedi : 9h - 13h</p>
+                    <div class="flex min-w-0 flex-col">
+                        <h3 class="font-semibold text-[#171717]">Horaires</h3>
+                        <p class="text-sm text-gray-600">
+                            Lundi - Vendredi : 9h - 18h
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Samedi : 9h - 13h
+                        </p>
                     </div>
+
                 </div>
 
             </div>
 
             <!-- Réseaux sociaux -->
-            <div class="contact-social-section">
-                <div class="contact-info-icon" aria-hidden="true">
-                    <img src="./images/share-icon.svg" alt="">
-                </div>
+            <div class="mt-5 border-t border-[#f0e5da] pt-4">
 
-                <div class="contact-social-content">
-                    <h3>Suivez-nous</h3>
-                    <p>
-                        Rejoignez notre communauté et découvrez nos nouveautés.
-                    </p>
-                    <!----social links -->
-                    <div class="contact-social-links">
-                        <a href="#" aria-label="Instagram">
-                            <img src="./images/black-instagram-icon.svg" alt="">
-                        </a>
+                <div class="flex items-start gap-4">
 
-                        <a href="#" aria-label="Facebook">
-                            <img src="./images/facebook-square-black-icon.svg" alt="">
-                        </a>
-
-                        <a href="#" aria-label="X">
-                            <img src="./images/x-social-media-black-icon.svg" alt="">
-                        </a>
-
-                        <a href="#" aria-label="YouTube">
-                            <img src="./images/youtube-icon.svg" alt="">
-                        </a>
+                    <!-- Icône de partage -->
+                    <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f5e5d9]">
+                        <img src="./images/share-icon.svg" alt="" class="h-7 w-7 object-contain">
                     </div>
+
+                    <!-- Contenu social -->
+                    <div class="flex min-w-0 flex-1 flex-col gap-2">
+
+                        <h3 class="font-semibold text-[#171717]">
+                            Suivez-nous
+                        </h3>
+
+                        <p class="text-sm leading-5 text-gray-600">
+                            Rejoignez notre communauté et découvrez nos nouveautés.
+                        </p>
+
+                        <!-- Liens sociaux -->
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <a href="#" aria-label="Instagram"
+                                class="flex h-10 w-10 items-center justify-center rounded-full bg-[#004b35]">
+                                <img src="./images/black-instagram-icon.svg" alt=""
+                                    class="h-5 w-5 object-contain brightness-0 invert">
+                            </a>
+
+                            <a href="#" aria-label="Facebook"
+                                class="flex h-10 w-10 items-center justify-center rounded-full bg-[#004b35]">
+                                <img src="./images/facebook-square-black-icon.svg" alt=""
+                                    class="h-5 w-5 object-contain brightness-0 invert">
+                            </a>
+
+                            <a href="#" aria-label="X"
+                                class="flex h-10 w-10 items-center justify-center rounded-full bg-[#004b35]">
+                                <img src="./images/x-social-media-black-icon.svg" alt=""
+                                    class="h-5 w-5 object-contain brightness-0 invert">
+                            </a>
+
+                            <a href="#" aria-label="YouTube"
+                                class="flex h-10 w-10 items-center justify-center rounded-full bg-[#004b35]">
+                                <img src="./images/youtube-icon.svg" alt=""
+                                    class="h-5 w-5 object-contain brightness-0 invert">
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
+
 
         <!-- Section de localisation -->
         <section class="contact-location-section">
-
             <!-- Carte et localisation -->
             <div class="contact-map">
                 <img src="./images/Carte pastel de Safi et ses environs.png"
@@ -186,7 +321,7 @@
                     <span aria-hidden="true">→</span>
                 </button>
             </div>
-
+        </section>
     </main>
     <footer class="bg-[#244331] text-white text-sm">
 
