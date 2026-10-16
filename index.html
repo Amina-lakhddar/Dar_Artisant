@@ -17,11 +17,11 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
+        extend: {                   
           colors: {
             custom: {
               primary: '#244331',  
-              secondary: '#A8441D',
+              secondary: '#A8441D',   
               bg: '#F8F1E7',      
               text: '#2C1B13',     
               surface: '#EAD9C5',  
@@ -74,6 +74,104 @@
         </header> 
         <main>
 
+
+          
+    <!-- Hero Section -->
+   <section class="relative h-[360px] bg-cover bg-center flex items-center px-6"      style="background-image: linear-gradient(to right, rgba(248, 241, 231, 0.95) 40%, rgba(248, 241, 231, 0) 100%), url('background.jpg');">
+      <div class="max-w-[240px] space-y-3">
+        <h1 class="font-serif text-[28px] font-bold text-custom-text leading-tight">
+          L'artisanat<br>au bout des mains
+        </h1>
+        <p class="text-xs text-custom-text/80 leading-relaxed">
+          Découvrez des créations uniques faites à la main par des artisans passionnés. Chaque pièce raconte une histoire.
+        </p>
+        <a href="#" class="inline-flex items-center space-x-2 bg-custom-secondary hover:bg-[#8f3717] text-white text-xs font-medium px-4 py-2.5 rounded-md transition shadow-md active:scale-95">
+          <span>Voir le catalogue</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services / Badges Section -->
+    <section class="py-4 bg-white border-y border-custom-surface">
+      <div class="grid grid-cols-3 gap-1 px-2 text-center">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-truck-fast text-custom-primary text-lg mb-1"></i>
+          <span class="font-bold text-[11px] text-custom-text leading-tight">Livraison rapide</span>
+          <span class="text-[9px] text-gray-500">partout au Maroc</span>
+        </div>
+        <div class="flex flex-col items-center border-x border-custom-surface px-1 justify-center">
+          <i class="fa-solid fa-leaf text-custom-primary text-lg mb-1"></i>
+          <span class="font-bold text-[11px] text-custom-text leading-tight">Matériaux naturels</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fa-solid fa-shield-halved text-custom-primary text-lg mb-1"></i>
+          <span class="font-bold text-[11px] text-custom-text leading-tight">Paiement sécurisé</span>
+          <span class="text-[9px] text-gray-500">100% fiable</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Categories Section (Categories converties en Boutons/Liens) -->
+    <section class="p-4">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="font-serif text-[24px] font-bold text-custom-text">Catégories populaires</h2>
+        <a href="#" class="text-[11px] text-custom-text bg-custom-surface px-2.5 py-1 rounded font-medium hover:bg-custom-accent/40 transition active:scale-95">voir toutes &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <!-- Bouton Catégorie 1: Céramique -->
+        <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+          <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=400" alt="Céramique" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <div class="p-2.5 flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Céramique</h3>
+              <span class="text-[10px] text-custom-text/70">18 produits</span>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </a>
+
+        <!-- Bouton Catégorie 2: Décoration -->
+        <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+          <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400" alt="Décoration" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <div class="p-2.5 flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Décoration</h3>
+              <span class="text-[10px] text-custom-text/70">14 produits</span>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </a>
+
+        <!-- Bouton Catégorie 3: Textile -->
+        <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+          <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=400" alt="Textile" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <div class="p-2.5 flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Textile</h3>
+              <span class="text-[10px] text-custom-text/70">16 produits</span>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </a>
+
+        <!-- Bouton Catégorie 4: Bijoux -->
+        <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=400" alt="Bijoux" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <div class="p-2.5 flex justify-between items-center">
+            <div>
+              <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Bijoux</h3>
+              <span class="text-[10px] text-custom-text/70">10 produits</span>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+            
         </main> 
         <footer class="bg-[#244331] text-white text-sm">
 
