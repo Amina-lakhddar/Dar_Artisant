@@ -10,6 +10,10 @@ La page catalogue présente les produits artisanaux marocains avec leurs images,
 
 Cette page présente les informations détaillées d’un produit artisanal, notamment son prix, sa catégorie, sa matière, ses dimensions, sa disponibilité et sa description, avec un bouton pour l’ajouter au panier.
 
+- ### Page Contact
+
+Cette page permet aux clients de consulter les coordonnées de Dar l’Artisan, de découvrir sa localisation et de nous contacter via un formulaire.
+
 - ### Page À propos
 
 Cette page présente l’histoire de Dar l’Artisan, ses valeurs, son engagement et sa mission de préserver et de valoriser le patrimoine artisanal marocain.
