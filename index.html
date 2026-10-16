@@ -5,27 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dar l'Artisan - Artisanat marocain</title>
   
+  <!-- Google Fonts (DM Sans & Playfair Display) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   
-  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- Custom Palette Config -->
   <script>
     tailwind.config = {
       theme: {
-        extend: {                   
+        extend: {
           colors: {
             custom: {
-              primary: '#244331',  
-              secondary: '#A8441D',   
-              bg: '#F8F1E7',      
-              text: '#2C1B13',     
-              surface: '#EAD9C5',  
-              accent: '#D6A16E',  
+              primary: '#244331',  /* Dark Green */
+              secondary: '#A8441D',/* Terracotta */
+              bg: '#F8F1E7',       /* Cream Background */
+              text: '#2C1B13',     /* Brown Text */
+              surface: '#EAD9C5',  /* Beige Surface / Cards */
+              accent: '#D6A16E',   /* Sand Accent */
             }
           },
           fontFamily: {
@@ -39,45 +43,54 @@
 </head>
 <body class="bg-gray-200 font-sans text-custom-text min-h-screen antialiased">
 
-  
+  <!-- Mobile Container -->
   <div class="max-w-[420px] mx-auto bg-custom-bg min-h-screen shadow-2xl relative overflow-x-hidden">
-    
-        <header class="flex items-center justify-between px-4 py-3 bg-white border-b border-custom-surface sticky top-0 z-50">
-        <div class="flex items-center space-x-2">
-            <div class="text-custom-secondary text-xl">
-            <i class="fa-solid fa-shapes"></i>
-            </div>
-            <div>
-            <span class="font-serif font-bold text-lg leading-none block text-custom-text">Dar l'Artisan</span>
-            <span class="text-[9px] tracking-widest text-custom-accent uppercase font-medium">artisanat marocain</span>
-            </div>
+
+    <!-- Header / En-tête -->
+    <header class="flex items-center justify-between px-4 py-3 bg-white border-b border-custom-surface sticky top-0 z-50">
+      <div class="flex items-center space-x-2">
+        <div class="text-custom-secondary text-xl">
+          <img class="relative w-10 h-10" src="images/icon.png" alt="icon">
+     
         </div>
+        <div>
+          <span class="font-serif font-bold text-lg leading-none block text-custom-text">Dar l'Artisan</span>
+          <span class="text-[9px] tracking-widest text-custom-accent uppercase font-medium">artisanat marocain</span>
+        </div>
+      </div>
 
+      <!-- Header Action Buttons -->
+      <div class="flex items-center space-x-3 text-custom-text">
         
-        <div class="flex items-center space-x-3 text-custom-text">
-            
-            <button type="button" 
-                    aria-label="Recherche" 
-                    class="p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+        <!-- Search Button -->
+        <button type="button" 
+                aria-label="Recherche" 
+                class="p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
 
+        <!-- Cart Button -->
+        <button type="button" 
+                aria-label="Panier" 
+                class="relative p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="absolute top-0 -right-1 bg-custom-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+            0
+          </span>
+        </button>
 
-            <button type="button" 
-                    aria-label="Panier" 
-                    class="relative p-2 text-base text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="absolute top-0 -right-1 bg-custom-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
-                0
-            </span>
-            </button>
-        </header> 
-        <main>
+        <!-- Menu Button -->
+        <button type="button" 
+                aria-label="Menu" 
+                class="p-2 text-xl text-custom-text hover:text-custom-secondary transition-all active:scale-95 rounded-full hover:bg-gray-100">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
+      </div>
+    </header>
 
-          
     <!-- Hero Section -->
-   <section class="relative h-[360px] bg-cover bg-center flex items-center px-6"      style="background-image: linear-gradient(to right, rgba(248, 241, 231, 0.95) 40%, rgba(248, 241, 231, 0) 100%), url('background.jpg');">
+   <section class="relative h-[360px] bg-cover bg-center flex items-center px-6"      style="background-image: linear-gradient(to right, rgba(248, 241, 231, 0.95) 40%, rgba(248, 241, 231, 0) 100%), url('images/images\ bg.jpg');">
       <div class="max-w-[240px] space-y-3">
         <h1 class="font-serif text-[28px] font-bold text-custom-text leading-tight">
           L'artisanat<br>au bout des mains
@@ -122,7 +135,7 @@
       <div class="grid grid-cols-2 gap-3">
         <!-- Bouton Catégorie 1: Céramique -->
         <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
-          <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=400" alt="Céramique" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <img src="images/images tagine.jpg" alt="Céramique" class="w-full h-24 object-cover group-hover:opacity-90 transition">
           <div class="p-2.5 flex justify-between items-center">
             <div>
               <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Céramique</h3>
@@ -134,7 +147,7 @@
 
         <!-- Bouton Catégorie 2: Décoration -->
         <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
-          <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=400" alt="Décoration" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <img src="images/images (1) decoration.jpg" alt="Décoration" class="w-full h-24 object-cover group-hover:opacity-90 transition">
           <div class="p-2.5 flex justify-between items-center">
             <div>
               <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Décoration</h3>
@@ -146,7 +159,7 @@
 
         <!-- Bouton Catégorie 3: Textile -->
         <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
-          <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=400" alt="Textile" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <img src="images/textil.jpg" alt="Textile" class="w-full h-24 object-cover group-hover:opacity-90 transition">
           <div class="p-2.5 flex justify-between items-center">
             <div>
               <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Textile</h3>
@@ -158,7 +171,7 @@
 
         <!-- Bouton Catégorie 4: Bijoux -->
         <a href="#" class="group bg-custom-surface rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
-          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=400" alt="Bijoux" class="w-full h-24 object-cover group-hover:opacity-90 transition">
+          <img src="images/images bijoux.jpg" alt="Bijoux" class="w-full h-24 object-cover group-hover:opacity-90 transition">
           <div class="p-2.5 flex justify-between items-center">
             <div>
               <h3 class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">Bijoux</h3>
@@ -170,97 +183,152 @@
       </div>
     </section>
 
+    <!-- Featured Products Section -->
+    <section class="p-4 pt-2">
+      <h2 class="font-serif text-[24px] font-bold text-custom-text mb-3">Produits vedettes</h2>
 
-            
-        </main> 
-        <footer class="bg-[#244331] text-white text-sm">
-
-        <!-- Main footer content -->
-        <div class="max-w-6xl mx-auto px-4 py-10 
-                    grid grid-cols-1 gap-8
-                    md:grid-cols-2 md:gap-10
-                    lg:grid-cols-4 lg:gap-8">
-
-            <!-- 1. Brand + Social -->
-            <div class="flex flex-col items-center text-center 
-                        md:items-start md:text-left gap-4">
-            <a href="index.html" class="flex items-center gap-3">
-                <img src="./images/logo-white-Darartisan.png" alt="Logo" class="w-12 h-12">
-                <div>
-                <h2 class="text-lg font-semibold">Dar l'Artisan</h2>
-                <p class="text-xs text-gray-300">Artisanat marocain</p>
-                </div>
-            </a>
-            <p class="text-gray-300 text-sm max-w-xs">
-                Des créations uniques, pour un quotidien plus chaleureux.
-            </p>
-            <!-- Social icons -->
-            <div class="flex gap-4 mt-2">
-                <a href="https://www.instagram.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
-                <img src="./images/instagram-white-icon.png" class="w-6 h-6" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
-                <img src="./images/facebook-app-round-white-icon.png" class="w-6 h-6" alt="Facebook">
-                </a>
-                <a href="https://twitter.com/darlartisan" target="_blank" class="hover:scale-110 transition">
-                <img src="./images/x-social-media-white-icon.png" class="w-6 h-6" alt="X">
-                </a>
-                <a href="https://www.youtube.com/darlartisan" target="_blank" class="hover:scale-110 transition">
-                <img src="./images/youtube-app-white-icon.png" class="w-6 h-6" alt="YouTube">
-                </a>
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <!-- Product 1 -->
+        <div class="bg-custom-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between relative border border-custom-accent/20">
+          <img src="images/images (1) bol.jpg" alt="Bol en céramique" class="w-full h-28 object-cover">
+          <div class="p-2.5 pb-3">
+            <h3 class="text-[11px] font-medium text-custom-text/90 truncate">Bol en céramique</h3>
+            <p class="font-bold text-xs text-custom-secondary mt-0.5">199 MAD</p>
+            <div class="text-custom-accent text-[8px] mt-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            </div>
-
-            <!-- 2. Navigation -->
-            <div class="flex flex-col items-center text-center 
-                        md:items-start md:text-left gap-3">
-            <h3 class="font-semibold text-base mb-1">Navigation</h3>
-            <a href="index.html" class="hover:text-amber-300 transition">Accueil</a>
-            <a href="catalogue.html" class="hover:text-amber-300 transition">Catalogue</a>
-            <a href="about.html" class="hover:text-amber-300 transition">À propos</a>
-            <a href="contact.html" class="hover:text-amber-300 transition">Contact</a>
-            </div>
-
-            <!-- 3. Informations -->
-            <div class="flex flex-col items-center text-center 
-                        md:items-start md:text-left gap-3">
-            <h3 class="font-semibold text-base mb-1">Informations</h3>
-            <a href="#" class="hover:text-amber-300 transition">Livraison</a>
-            <a href="#" class="hover:text-amber-300 transition">Retours</a>
-            <a href="#" class="hover:text-amber-300 transition">Paiement sécurisé</a>
-            <a href="#" class="hover:text-amber-300 transition">FAQ</a>
-            </div>
-
-            <!-- 4. Contact -->
-            <div class="flex flex-col items-center text-center 
-                        md:items-start md:text-left gap-3">
-            <h3 class="font-semibold text-base mb-1">Contact</h3>
-            <a href="tel:+212612345678" class="flex items-center gap-2 hover:text-amber-300 transition">
-                <span>📞</span> +212 6 12 34 56 78
-            </a>
-            <a href="mailto:contact@darlartisan.ma" class="flex items-center gap-2 hover:text-amber-300 transition">
-                <span>✉️</span> contact@darlartisan.ma
-            </a>
-            <a href="https://www.google.com/maps/place/Safi,+Maroc" target="_blank" 
-                class="flex items-center gap-2 hover:text-amber-300 transition">
-                <span>📍</span> Safi, Maroc
-            </a>
-            </div>
+          </div>
+          <!-- Add to Cart Button -->
+          <button type="button" 
+                  aria-label="Ajouter au panier" 
+                  class="absolute bottom-2 right-2 bg-custom-primary hover:bg-[#1a3225] text-white w-7 h-7 rounded-full flex items-center justify-center text-[10px] shadow transition-all active:scale-90 hover:scale-105">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
         </div>
 
-        <!-- Bottom bar -->
-        <div class="border-t border-white/20">
-            <div class="max-w-6xl mx-auto px-4 py-4 
-                        flex flex-col items-center gap-2 text-xs text-gray-300
-                        md:flex-row md:justify-between">
-            <p>© 2026 Dar l'Artisan. Tous droits réservés.</p>
-            <div class="flex gap-4">
-                <a href="#" class="hover:text-white transition">Conditions générales</a>
-                <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+        <!-- Product 2 -->
+        <div class="bg-custom-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between relative border border-custom-accent/20">
+          <img src="images/lyton.jpg" alt="Lanterne en laiton ajouré" class="w-full h-28 object-cover">
+          <div class="p-2.5 pb-3">
+            <h3 class="text-[11px] font-medium text-custom-text/90 truncate">Lanterne en laiton ajouré</h3>
+            <p class="font-bold text-xs text-custom-secondary mt-0.5">350 MAD</p>
+            <div class="text-custom-accent text-[8px] mt-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            </div>
+          </div>
+          <!-- Add to Cart Button -->
+          <button type="button" 
+                  aria-label="Ajouter au panier" 
+                  class="absolute bottom-2 right-2 bg-custom-primary hover:bg-[#1a3225] text-white w-7 h-7 rounded-full flex items-center justify-center text-[10px] shadow transition-all active:scale-90 hover:scale-105">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
         </div>
-        </footer>  
+
+        <!-- Product 3 -->
+        <div class="bg-custom-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between relative border border-custom-accent/20">
+          <img src="images/tresse.jpg" alt="Panier tressé" class="w-full h-28 object-cover">
+          <div class="p-2.5 pb-3">
+            <h3 class="text-[11px] font-medium text-custom-text/90 truncate">Panier tressé</h3>
+            <p class="font-bold text-xs text-custom-secondary mt-0.5">220 MAD</p>
+            <div class="text-custom-accent text-[8px] mt-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- Add to Cart Button -->
+          <button type="button" 
+                  aria-label="Ajouter au panier" 
+                  class="absolute bottom-2 right-2 bg-custom-primary hover:bg-[#1a3225] text-white w-7 h-7 rounded-full flex items-center justify-center text-[10px] shadow transition-all active:scale-90 hover:scale-105">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-custom-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between relative border border-custom-accent/20">
+          <img src="images/tapis.webp" alt="Tapis berbère" class="w-full h-28 object-cover">
+          <div class="p-2.5 pb-3">
+            <h3 class="text-[11px] font-medium text-custom-text/90 truncate">Tapis berbère</h3>
+            <p class="font-bold text-xs text-custom-secondary mt-0.5">450 MAD</p>
+            <div class="text-custom-accent text-[8px] mt-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- Add to Cart Button -->
+          <button type="button" 
+                  aria-label="Ajouter au panier" 
+                  class="absolute bottom-2 right-2 bg-custom-primary hover:bg-[#1a3225] text-white w-7 h-7 rounded-full flex items-center justify-center text-[10px] shadow transition-all active:scale-90 hover:scale-105">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Catalogue Link Button -->
+      <a href="#" class="w-full bg-custom-secondary hover:bg-[#8f3717] text-white text-xs font-semibold py-3 rounded-lg flex items-center justify-center space-x-2 transition shadow-md active:scale-95">
+        <span>Voir tout le catalogue</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-primary text-white px-5 py-6 mt-6 space-y-6">
+      <div>
+        <div class="flex items-center space-x-2 mb-2">
+          <i class="fa-solid fa-shapes text-custom-accent text-xl"></i>
+          <div>
+            <span class="font-serif font-bold text-lg leading-none block text-white">Dar l'Artisan</span>
+            <span class="text-[8px] tracking-widest text-custom-accent uppercase">artisanat marocain</span>
+          </div>
+        </div>
+        <p class="text-gray-200 text-[10px]">Des créations uniques, pour un quotidien plus chaleureux.</p>
         
-    </body>
-</html>    
+        <!-- Social Media Buttons -->
+        <div class="flex space-x-3 mt-3 text-xs text-custom-accent">
+          <button type="button" aria-label="Instagram" class="hover:text-white transition active:scale-90"><i class="fa-brands fa-instagram"></i></button>
+          <button type="button" aria-label="Facebook" class="hover:text-white transition active:scale-90"><i class="fa-brands fa-facebook"></i></button>
+          <button type="button" aria-label="Pinterest" class="hover:text-white transition active:scale-90"><i class="fa-brands fa-pinterest"></i></button>
+          <button type="button" aria-label="YouTube" class="hover:text-white transition active:scale-90"><i class="fa-brands fa-youtube"></i></button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-2 text-[10px]">
+        <div>
+          <h3 class="font-bold text-custom-accent mb-2">Navigation</h3>
+          <ul class="space-y-1 text-gray-200">
+            <li><a href="#" class="hover:underline">Accueil</a></li>
+            <li><a href="#" class="hover:underline">Catalogue</a></li>
+            <li><a href="#" class="hover:underline">À propos</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-custom-accent mb-2">Informations</h3>
+          <ul class="space-y-1 text-gray-200">
+            <li><a href="#" class="hover:underline">Livraison</a></li>
+            <li><a href="#" class="hover:underline">Retours</a></li>
+            <li><a href="#" class="hover:underline">Paiement sécurisé</a></li>
+            <li><a href="#" class="hover:underline">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-custom-accent mb-2">Contact</h3>
+          <ul class="space-y-1 text-gray-200 text-[9px]">
+            <li class="flex items-center space-x-1"><i class="fa-solid fa-phone"></i><span>+212 6 12 34 56 78</span></li>
+            <li class="flex items-center space-x-1"><i class="fa-solid fa-envelope"></i><span>contact@darlartisan.ma</span></li>
+            <li class="flex items-center space-x-1"><i class="fa-solid fa-location-dot"></i><span>Safi, Maroc</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-white/10 text-[9px] text-gray-300 text-center space-y-1">
+        <p>© 2026 Dar l'Artisan. Tous droits réservés.</p>
+        <div>
+          <a href="#" class="hover:underline">Conditions générales</a> | <a href="#" class="hover:underline">Politique de confidentialité</a>
+        </div>
+      </div>
+    </footer>
+     
+  </div>
+
+</body>
+</html>
