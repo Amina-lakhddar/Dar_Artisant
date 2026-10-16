@@ -7,14 +7,47 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 <body class="bg-background w-full">
-  <header>
+  <!--========================= header ================================-->
+    <header class="flex items-center w-full p-4 px-0 mx-0 gap-17 h-17 ">
+        <!-- Logo -->
+        <a href="index.html" class="flex w-full hover:scale-102 transition-transform" >
+            <img class="h-11 w-11 mx-1" src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
+            <div class="flex flex-col w-full">
+                <p class="text-lg font-bold">Dar L’Artisan</p>
+                <p class="text-gray-600">artisanat marocain</p>
+            </div>   
+        </a>
+        
+        <!-- Icons -->
+        <div class="flex gap-3 justify-end items-center w-2/3 ml-auto">
 
-  </header>
+            <!-- Search: décoration uniquement -->
+            <a href="#search" class="hover:scale-110 transition-transform"><img class="w-7 h-7" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt=""></a>
+
+            <!-- User: décoration uniquement -->
+            <a href="panier.html" class="hover:scale-110 transition-transform"><img class="w-10 h-10" src="./images/109338-removebg-preview.png" alt=""></a>
+
+            <!-- Menu cliquable -->
+            <details class="cursor-pointer">
+                <summary>
+                    <img class="w-6 h-6" src="./images/list-square-bullet-icon.svg">
+                </summary>
+                <nav class="absolute right-0 mt-2 w-25 bg-background border border-gray-300 rounded-md ">
+                    <a class="block p-2 hover:bg-gray-200" href="index.html">Accueil</a>
+                    <a class="block p-2 hover:bg-gray-200" href="catalogue.html">Catalogue</a>
+                    <a class="block p-2 hover:bg-gray-200" href="about.html">À propos</a>
+                    <a class="block p-2 hover:bg-gray-200" href="contact.html">Contact</a>
+                </nav>
+
+            </details>
+        </div>
+    </header>
+
   <main>
     <!-- Mobile Container -->
   <div>
     <!-- Hero Section -->
-    <section class="relative h-70 bg-cover bg-center flex items-center px-6"
+    <section class="relative h-70 bg-cover bg-center flex items-center px-6 md:h-80 md:text-lg lg:h-90 lg:text-xl"
       style="background-image: linear-gradient(to right, rgba(248, 241, 231, 0.95) 40%, rgba(248, 241, 231, 0) 100%), url('images/images\ bg.jpg');">
       <div class="max-w-50 space-y-3">
         <h1 class="font-serif text-[28px] font-bold">
@@ -51,14 +84,14 @@
     </section>
 
     <!-- Popular Categories Section (Categories converties en Boutons/Liens) -->
-    <section class="p-4">
+    <section class="p-4 ">
       <div class="flex justify-between items-center mb-3">
         <h2 class="font-serif text-[24px] font-bold ">Catégories populaires</h2>
         <a href="#"
           class="text-[11px] px-2.5 py-1 rounded font-medium hover:bg-custom-accent/40 transition active:scale-95">voir toutes &rarr;</a>
       </div>
 
-      <div class="grid grid-cols-2 gap-3">
+      <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-10">
         <!-- Bouton Catégorie 1: Céramique -->
         <a href="#"
           class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
@@ -119,7 +152,7 @@
     <!-- Featured Products Section -->
     <section class="p-4 pt-2">
       <h2 class="font-serif text-[24px] font-bold text-custom-text mb-3">Produits vedettes</h2>
-      <div class="grid grid-cols-2 gap-3 mb-4">
+      <div class="grid grid-cols-2 gap-3 mb-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-9">
         <!-- Product 1 -->
         <div
           class=" bg-background rounded-xl shadow-sm border transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
@@ -141,8 +174,8 @@
           <img src="images/lyton.jpg" alt="Lanterne en laiton ajouré" class="w-full h-28 object-cover">
           <div class="flex gap-2 p-2 items-center">
             <div class="p-2 pb-3">
-              <h3 class="font-medium">Bol en céramique</h3>
-              <p class=" font-medium text-xs mt-0.5">199 MAD</p>
+              <h3 class="font-medium">Lanterne en laiton</h3>
+              <p class=" font-medium text-xs mt-0.5">350 MAD</p>
               <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
             </div>
             <!-- Add to Cart Button -->
@@ -157,8 +190,8 @@
           <img src="images/tresse.jpg" alt="Panier tressé" class="w-full h-28 object-cover">
           <div class="flex gap-2 p-2 items-center">
             <div class="p-2 pb-3">
-              <h3 class="font-medium">Bol en céramique</h3>
-              <p class=" font-medium text-xs mt-0.5">199 MAD</p>
+              <h3 class="font-medium">Pannier tressé</h3>
+              <p class=" font-medium text-xs mt-0.5">220 MAD</p>
               <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
             </div>
             <!-- Add to Cart Button -->
@@ -172,8 +205,8 @@
           <img src="images/tapis.webp" alt="Tapis berbère" class="w-full h-28 object-cover">
           <div class="flex gap-2 p-2 items-center">
             <div class="p-2 pb-3">
-              <h3 class="font-medium">Bol en céramique</h3>
-              <p class=" font-medium text-xs mt-0.5">199 MAD</p>
+              <h3 class="font-medium">Tapis berbère</h3>
+              <p class=" font-medium text-xs mt-0.5">450 MAD</p>
               <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
             </div>
             <!-- Add to Cart Button -->
