@@ -56,3 +56,6 @@ Cette page présente une maquette statique du panier, avec des produits, des qua
 
 ### lien de Figma
 https://www.figma.com/design/cIEbvemmgjupOYPk2krDrr/Dar-l-artisant?node-id=1-6&t=mHKsFdu4s9Q1xGpm-0
+
+### Lien de la olanification de projet
+    https://github.com/users/Amina-lakhddar/projects/1/views/1?filterQuery=parent-issue%3A%22Amina-lakhddar%2FDar_Artisant%2315%22
