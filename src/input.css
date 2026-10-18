@@ -1,14 +1,4 @@
 @import "tailwindcss";
-<<<<<<< HEAD
-=======
-.test-bg {
-    background-image: url("../images/bolmaroc.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 100px;
-
->>>>>>> origin/main
 
 @theme {
   --color-primary: #244331;
@@ -20,8 +10,4 @@
 
   --font-display: Georgia, serif;
   --font-body: Arial, sans-serif;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
 }
