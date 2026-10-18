@@ -9,6 +9,10 @@
 </head>
 
 <body class="text-xs w-auto">
+
+<body class="bg-background text-xs w-full
+    md:text-base
+    lg: text-lg  ">
     <header>
 
 
@@ -20,6 +24,12 @@
               md:grid-cols-2 md:gap-10
               lg:grid-cols-4 lg:gap-8">
             <div class="bg-[url('./images/moroccan-artisan-backg.jpg')] h-42 bg-cover w-screen bg-center p-0
+
+        <div>
+
+            <!-- intro screen --> 
+
+            <div class="bg-[url('./images/moroccan-artisan-backg.jpg')] h-42 bg-cover w-full bg-center mt-5
                 md:h-72 lg:h-96">
                 <div class="bg-gradient-to-r from-[#F5E6D3] via-[#f5f0e6]/85 to-transparent w-3/4 h-full">
                     <h1 class="text-2xl font-bold text-gray-800 p-4">Votre Panier</h1>
@@ -97,10 +107,99 @@
                         <div>
                             <h4></h4>
                             <p></p>
+            <!-- Products in panier -->
+            <div class="w-full p-4 my-10 grid grid-cols-1 gap-3
+                md:grid-cols-1 md:gap-6
+                lg:grid-cols-2 lg:gap-10">
+                <div class="bg-[#F8F1E7] w-full p-2 border border-orange-300 rounded-md">
+                    <h1 class="text-xl font-bold text-gray-800">Produits</h1>
+                    <div class="bg-[#F8F1E7] flex items-center justify-between border-b border-gray-300 p-2 gap-2">
+                        <img class="w-12 h-12" src="images/lanternalaiton.jpg" alt="Lanterne en laiton ajouré">
+                        <h4 class="text-md font-semibold text-gray-800">Lanterne en laiton</h4>
+                        <p class="text-md font-semibold text-gray-800">350 MAD</p>
+                        <p class="font-bold"><span class="font-bold">-</span> 1 <span class="font-bold">+</span></p>
+                        <p class="text-md font-bold text-gray-800">350 MAD</p>
+                        <img class="w-4 h-4" src="images/trash-icon.png" alt="Supprimer">
+                    </div>
+                    <div class="bg-[#F8F1E7] flex items-center justify-between border-b border-gray-300 p-2 gap-2">
+                        <img class="w-12 h-12" src="images/bolmaroc.jpg" alt="Bol marocain">
+                        <h4 class="text-md font-semibold text-gray-800">Bol marocain</h4>
+                        <p class="text-md font-bold text-gray-800">150 MAD</p>
+                        <p class="font-bold"><span class="font-bold">-</span> 4 <span class="font-bold">+</span></p>
+                        <p class="text-md font-bold text-gray-800">600 MAD</p>
+                        <img class="w-4 h-4" src="images/trash-icon.png" alt="Supprimer">
+                    </div>
+                    <div class="bg-[#F8F1E7] flex items-center justify-between border-b border-gray-300 p-2 gap-2">
+                        <img class="w-12 h-12" src="images/paniertresse.jpg" alt="Panier de tresse">
+                        <h4 class="text-md font-semibold text-gray-800">Panier de tresse</h4>
+                        <p class="text-md font-bold text-gray-800">250 MAD</p>
+                        <p class="font-bold"><span class="font-bold">-</span> 2 <span class="font-bold">+</span></p>
+                        <p class="text-md font-bold text-gray-800">500 MAD</p>
+                        <img class="w-4 h-4 " src="images/trash-icon.png" alt="Supprimer">
+                    </div>
+                    <div class="bg-[#F8F1E7] flex items-center justify-between border-b border-gray-300 p-2 gap-2">
+                        <img class="w-12 h-12" src="images/tapie.webp" alt="Tapie marocaine">
+                        <h4 class="text-md font-semibold text-gray-800">Tapie marocaine</h4>
+                        <p class="text-md font-bold text-gray-800">2500 MAD</p>
+                        <p class="font-bold"><span class="font-bold">-</span> 1 <span class="font-bold">+</span></p>
+                        <p class="text-md font-bold text-gray-800">2500 MAD</p>
+                        <img class="w-4 h-4 " src="images/trash-icon.png" alt="Supprimer">
+                    </div>
+                    <div class="flex items-center justify-between gap-2 p-2">
+                        <a href="#"><button
+                                class="bg-[#F8F1E7] text-[#A8441D] hover:text-orange-500  font-bold py-2 px-4 border border-[#A8441D] rounded"
+                                type="button">Vider le panier</button></a>
+                        <a href="#"><button
+                                class="bg-[#F8F1E7] text-[#A8441D] hover:text-orange-500  font-bold py-2 px-4 border border-[#A8441D] rounded"
+                                type="button">Continuer les achats</button></a>
+                    </div>
+                </div>
+                
+                <!--  récapitulatif de commande  -->
+                <div class="bg-[#FDE6D6] p-2 rounded-md w-full">
+                    
+                    <h1 class="font-bold text-lg p-4">Récapitulatif de commande</h1>
+                    <div class="flex gap-10">
+                        <p class="font-semibold mx-2">sous-total:</p>
+                        <p>4100,00 MAD</p>
+                    </div>
+                    <div class="flex gap-11 p-4 w-full">
+                        <p class="font-semibold">Livraison:</p>
+                        <p >30,00 MAD</p>
+                    </div>
+                    <div class=" flex gap-10 p-2 border m-3 ">
+                        <p class="font-bold">Total:</p>
+                        <p class="font-bold">4130,00 MAD</p>
+                    </div>
+                    <a href="#"><button
+                            class="w-full bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Commander</button></a>
+                    <div class="grid grid-cols-1 gap-2">
+                        <div class="flex items-center gap-2 p-2">
+                            <img class="w-10 h-10" src="./images/fast-delivery-icon.svg" alt="Livraison rapide">
+                            <div>
+                                <h4 class="font-bold">Livraison rapide</h4>
+                                <p>Entre 2-5 jours</p>
+                            </div>
                         </div>
+                        <div class="flex items-center gap-2 p-2">
+                            <img class="w-10 h-10" src="./images/shield-lock-line-icon.svg" alt="Paiement sécurisé">
+                            <div>
+                                <h4 class="font-bold p-2">Paiement sécurisé</h4>
+                                <p>Vos transactions sont protégées</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 p-2">
+                            <img class="w-10 h-10" src="./images/hand-exchange-money-icon.svg" alt="Retours faciles">
+                            <div>
+                                <h4 class="font-bold">Retours faciles</h4>
+                                <p>Sous 15 jours</p>
+                            </div>
+    </div>
                     </div>
                 </div>
             </div>
+
             <h1>Vous aimerez aussi</h1>
             <div>
                 <div>
@@ -139,6 +238,58 @@
 
         <!-- Main footer content -->
         <div class="max-w-6xl mx-auto px-4 py-10 
+
+            <!-- Produits recommandés -->
+             <!-- mobile / Desktop / tablette-->
+            <h1 class="text-lg font-bold p-4">Vous aimerez aussi</h1>
+            <div class="w-full p-4 grid grid-cols-1 gap-3
+                md:grid-cols-2 md:gap-4
+                lg:grid-cols-4 lg:gap-8">
+                <div class="bg-[#F8F1E7] p-2 border border-orange-300 rounded-md">
+                    <img class="w-full h-60 rounded-md" src="images/vase2.webp" alt="Vase en verre soufflé">
+                    <h4 class="text-lg font-semibold">Vase en verre soufflé</h4>
+                    <p class="text-lg font-bold text-[#8B4513]">450,00 MAD</p>
+                    <a href="#"><button class="bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Ajouter au panier</button></a>
+                </div>
+                <div class="bg-[#F8F1E7] p-2 border border-orange-300 rounded-md">
+                    <img class="w-full h-60 rounded-md" src="images/setteamaroc.jpg" alt="Set de thé marocain">
+                    <h4 class="text-lg font-semibold">Set de thé marocain</h4>
+                    <p class="text-lg font-bold text-[#8B4513]">300,00 MAD</p>
+                    <a href="#"><button class="bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Ajouter au panier</button></a>
+                </div>
+                <div class="bg-[#F8F1E7] p-2 border border-orange-300 rounded-md">
+                    <img class="w-full h-60 rounded-md" src="images/Lanterne marocaine sous lumière dorée.png"
+                        alt="Lanterne marocaine sous lumière dorée">
+                    <h4 class="text-lg font-semibold">Lanterne marocaine sous lumière dorée</h4>
+                    <p class="text-lg font-bold text-[#8B4513]">500,00 MAD</p>
+                    <a href="#"><button class="bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Ajouter au panier</button></a>
+                </div>
+                <div class="bg-[#F8F1E7] p-2 border border-orange-300 rounded-md">
+                    <img class="w-full h-60 rounded-md" src="images/5diyat.webp" alt="5 Diyat">
+                    <h4 class="text-lg font-semibold">Oreiller en soie rouge</h4>
+                    <p class="text-lg font-bold text-[#8B4513]">400,00 MAD</p>
+                    <a href="#"><button class="bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Ajouter au panier</button></a>
+                </div>
+                <div class="bg-[#F8F1E7] p-2 border border-orange-300 rounded-md">
+                    <img class="w-full h-60 rounded-md" src="images/laitonmaroc.jpg" alt="Laiton led marocain">
+                    <h4 class="text-lg font-semibold">Laiton led marocain</h4>
+                    <p class="text-lg font-bold text-[#8B4513]">750,00 MAD</p>
+                    <a href="#"><button class="bg-[#8B4513] hover:bg-[#A0522D] text-white font-bold py-2 px-4 rounded"
+                            type="button">Ajouter au panier</button></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-[#244331] text-white text-sm">
+
+        <!-- Main footer content -->
+        <div class=" px-4 py-10 
+
               grid grid-cols-1 gap-8
               md:grid-cols-2 md:gap-10
               lg:grid-cols-4 lg:gap-8">
@@ -223,3 +374,10 @@
             </div>
         </div>
     </footer>
+    <!-- Finishing this pages ;-)  -->
+
+
+</body>
+
+</html>
+
