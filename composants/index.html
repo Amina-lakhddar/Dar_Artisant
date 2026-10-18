@@ -79,27 +79,221 @@
 
     </header>
     <main>
+
+
         <!-- accueil -->
+        <!-- Mobile Container -->
+        <div>
+            <!-- Hero Section -->
+            <section class=" h-70 bg-cover bg-center flex items-center px-6 md:h-80 md:text-lg lg:h-90 lg:text-xl"
+                style="background-image: linear-gradient(to right, rgba(248, 241, 231, 0.95) 40%, rgba(248, 241, 231, 0) 100%), url('images/images\ bg.jpg');">
+                <div class="max-w-50 space-y-3">
+                    <h1 class="font-serif text-[28px] font-bold">
+                        L'artisanat<br>au bout des mains
+                    </h1>
+                    <p class="text-sm">
+                        Découvrez des créations uniques faites à la main par des artisans passionnés. Chaque pièce
+                        raconte une
+                        histoire.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-black bg-accent hover:bg-[#8f3717] hover:text-white text-xs font-medium px-4 py-2.5 rounded-md transition">
+                        <span>Voir le catalogue</span>
+                    </a>
+                </div>
+            </section>
+            <!-- Services / Badges Section -->
+            <section class="py-2 bg-white">
+                <div class="grid grid-cols-3 gap-1 px-2 text-center">
+                    <div class="flex flex-col items-center">
+                        <img src="../images/livraison.png" alt="livraison rapide" class="w-10 h-10 object-contain mb-1">
+                        <span class="font-bold text-[11px] text-custom-text leading-tight">Livraison rapide</span>
+                        <span class="text-[9px] text-gray-500">partout au Maroc</span>
+                    </div>
+                    <div class="flex flex-col items-center border-x border-custom-surface px-1 justify-center">
+                        <img src="../images/naturel.avif" alt="matériaux naturel" class="w-10 h-10">
+                        <span class="font-bold text-[11px] text-custom-text leading-tight">Matériaux naturels</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="../images/safe.png" alt="paiment sécurisé" class="w-10 *">
+                        <span class="font-bold text-[11px] text-custom-text leading-tight">Paiement sécurisé</span>
+                        <span class="text-[9px] text-gray-500">100% fiable</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Categories Section (Categories converties en Boutons/Liens) -->
+            <section class="p-4 ">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="font-serif text-[24px] font-bold ">Catégories populaires</h2>
+                    <a href="#"
+                        class="text-[11px] px-2.5 py-1 rounded font-medium hover:bg-custom-accent/40 transition active:scale-95">voir
+                        toutes &rarr;</a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-10">
+                    <!-- Bouton Catégorie 1: Céramique -->
+                    <a href="#"
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/images tagine.jpg" alt="Céramique"
+                            class="w-full h-24 object-cover group-hover:opacity-90 transition">
+                        <div class="p-2.5 flex justify-between items-center">
+                            <div>
+                                <h3 class="font-bold text-xs group-hover: transition">Céramique</h3>
+                                <span class="text-[10px] ">18 produits</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Bouton Catégorie 2: Décoration -->
+                    <a href="#"
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/images (1) decoration.jpg" alt="Décoration"
+                            class="w-full h-24 object-cover group-hover:opacity-90 transition">
+                        <div class="p-2.5 flex justify-between items-center">
+                            <div>
+                                <h3 class="font-bold text-xs group-hover:text-custom-secondary transition">Décoration
+                                </h3>
+                                <span class="text-[10px]">14 produits</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Bouton Catégorie 3: Textile -->
+                    <a href="#"
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/textil.jpg" alt="Textile"
+                            class="w-full h-24 object-cover group-hover:opacity-90 transition">
+                        <div class="p-2.5 flex justify-between items-center">
+                            <div>
+                                <h3
+                                    class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">
+                                    Textile</h3>
+                                <span class="text-[10px] text-custom-text/70">16 produits</span>
+                            </div>
+                            <i
+                                class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+                        </div>
+                    </a>
+
+                    <!-- Bouton Catégorie 4: Bijoux -->
+                    <a href="#"
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/images bijoux.jpg" alt="Bijoux"
+                            class="w-full h-24 object-cover group-hover:opacity-90 transition">
+                        <div class="p-2.5 flex justify-between items-center">
+                            <div>
+                                <h3
+                                    class="font-bold text-xs text-custom-text group-hover:text-custom-secondary transition">
+                                    Bijoux</h3>
+                                <span class="text-[10px] text-custom-text/70">10 produits</span>
+                            </div>
+                            <i
+                                class="fa-solid fa-chevron-right text-[10px] text-custom-accent group-hover:translate-x-0.5 transition"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Featured Products Section -->
+            <section class="p-4 pt-2">
+                <h2 class="font-serif text-[24px] font-bold text-custom-text mb-3">Produits vedettes</h2>
+                <div class="grid grid-cols-2 gap-3 mb-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 lg:gap-9">
+                    <!-- Product 1 -->
+                    <div
+                        class=" bg-background rounded-xl shadow-sm border transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/images (1) bol.jpg" alt="Bol en céramique" class="w-full h-28 object-cover">
+                        <div class="flex gap-2 p-2 items-center">
+                            <div class="p-2 pb-3">
+                                <h3 class="font-medium">Bol en céramique</h3>
+                                <p class=" font-medium text-xs mt-0.5">199 MAD</p>
+                                <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
+                            </div>
+                            <!-- Add to Cart Button -->
+                            <button
+                                class="bg-amber-700 cursor-pointer text-center h-12 w-12 p-2 rounded-full hover:bg-amber-600"><img
+                                    src="../images/panier.png"></button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/lyton.jpg" alt="Lanterne en laiton ajouré" class="w-full h-28 object-cover">
+                        <div class="flex gap-2 p-2 items-center">
+                            <div class="p-2 pb-3">
+                                <h3 class="font-medium">Lanterne en laiton</h3>
+                                <p class=" font-medium text-xs mt-0.5">350 MAD</p>
+                                <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
+                            </div>
+                            <!-- Add to Cart Button -->
+                            <button
+                                class="bg-amber-700 cursor-pointer text-center h-12 w-12 p-2 rounded-full hover:bg-amber-600"><img
+                                    src="../images/panier.png"></button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div
+                        class="group bg-background rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/tresse.jpg" alt="Panier tressé" class="w-full h-28 object-cover">
+                        <div class="flex gap-2 p-2 items-center">
+                            <div class="p-2 pb-3">
+                                <h3 class="font-medium">Pannier tressé</h3>
+                                <p class=" font-medium text-xs mt-0.5">220 MAD</p>
+                                <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
+                            </div>
+                            <!-- Add to Cart Button -->
+                            <button
+                                class="bg-amber-700 cursor-pointer text-center h-12 w-12 p-2 rounded-full hover:bg-amber-600"><img
+                                    src="../images/panier.png"></button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div
+                        class="group bg-[#F8F1E7] rounded-xl overflow-hidden shadow-sm border border-custom-accent/20 transition-all duration-200 hover:shadow-md hover:scale-[1.02] active:scale-95 block">
+                        <img src="../images/tapis.webp" alt="Tapis berbère" class="w-full h-28 object-cover">
+                        <div class="flex gap-2 p-2 items-center">
+                            <div class="p-2 pb-3">
+                                <h3 class="font-medium">Tapis berbère</h3>
+                                <p class=" font-medium text-xs mt-0.5">450 MAD</p>
+                                <p class="text-yellow-500 text-xs mt-1">★★★★★</p>
+                            </div>
+                            <!-- Add to Cart Button -->
+                            <button
+                                class="bg-amber-700 cursor-pointer text-center h-12 w-12 p-2 rounded-full hover:bg-amber-600"><img
+                                    src="../images/panier.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catalogue Link Button -->
+                <a href="#"
+                    class="w-full bg-amber-700 hover:bg-[#8f3717] text-white text-xs font-semibold py-3 rounded-lg flex items-center justify-center">
+                    <span>Voir tout le catalogue</span>
+                </a>
+            </section>
+        </div>    
 
 
 
-        <!-- Catalogue -->
+            <!-- Catalogue -->
 
 
 
 
 
-        <!-- Panier -->
+            <!-- Panier -->
 
 
 
 
-        <!-- A propos -->
+            <!-- A propos -->
 
 
 
 
-        <!-- Contact -->
+            <!-- Contact -->
 
 
     </main>
@@ -196,4 +390,5 @@
     <!-- Finishing this pages ;-)  -->
 
 </body>
+
 </html>
