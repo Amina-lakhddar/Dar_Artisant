@@ -12,6 +12,7 @@
 
 <body class="bg-white">
     <!--========================= header ================================-->
+
     <header class="flex items-center w-full ">
         <!-- Logo -->
         <a href="index.html" class="flex w-full hover:scale-102 transition-transform">
@@ -21,9 +22,20 @@
                 <p class="text-lg font-bold">Dar L’Artisan</p>
                 <p class="text-gray-600">artisanat marocain</p>
             </div>
-        </a>
 
+    <header class="flex items-center w-full p-4 px-0 mx-0 gap-17 h-17 ">
+        <!-- Logo -->
+        <a href="index.html" class="flex w-full hover:scale-102 transition-transform" >
+            <img class="h-11 w-11 mx-1" src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
+            <div class="flex flex-col w-full">
+                <p class="text-lg font-bold">Dar L’Artisan</p>
+                <p class="text-gray-600">artisanat marocain</p>
+            </div>   
+
+        </a>
+        
         <!-- Icons -->
+
         <div class="flex gap-3 justify-end items-center w-2/3 ">
 
             <!-- Search: décoration uniquement -->
@@ -40,14 +52,32 @@
                     <img class="w-6 h-6" src="./images/list-square-bullet-icon.svg">
                 </summary>
                 <nav class="absolute right-0 bg-background border border-gray-300 rounded-md">
+
+        <div class="flex gap-3 justify-end items-center w-2/3 ml-auto">
+
+            <!-- Search: décoration uniquement -->
+            <a href="#search" class="hover:scale-110 transition-transform"><img class="w-7 h-7" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt=""></a>
+
+            <!-- User: décoration uniquement -->
+            <a href="panier.html" class="hover:scale-110 transition-transform"><img class="w-10 h-10" src="./images/109338-removebg-preview.png" alt=""></a>
+
+            <!-- Menu cliquable -->
+            <details class="cursor-pointer">
+                <summary aria-label="Ouvrir le menu">
+                    <img class="w-7 h-7" src="./images/list-square-bullet-icon.svg">
+                </summary>
+                <nav aria-label="Navigation principale " class="absolute right-0 mt-2 w-25 bg-background border border-gray-300 rounded-md ">
+
                     <a class="block p-2 hover:bg-gray-200" href="index.html">Accueil</a>
                     <a class="block p-2 hover:bg-gray-200" href="catalogue.html">Catalogue</a>
                     <a class="block p-2 hover:bg-gray-200" href="about.html">À propos</a>
                     <a class="block p-2 hover:bg-gray-200" href="contact.html">Contact</a>
                 </nav>
+
             </details>
         </div>
     </header>
+
     <!--================== main=================================-->
     <main>
         <!---section d'introduction -->
@@ -60,6 +90,17 @@
                     ou simplement envie de nous écrire ?
                     Nous sommes là pour vous répondre.
                 </p>
+
+        <section class="bg-background bg-cover bg-center px-4 py-2 w 2/3"
+            style="background-image: linear-gradient(to right, #fffaf5 0%, rgba(255,250,245,0) 65%), url('./images/Lumière\ marocaine\ sur\ table\ artisanale.png');">
+            <div class="flex flex-col gap-3">
+            <h1 class=" font-serif text-2xl font-bold text-black">Contactez-nous</h1>
+            <p class="text-sm  text-black w-2/3">
+                Une question, une demande particulière
+                ou simplement envie de nous écrire ?
+                Nous sommes là pour vous répondre.
+            </p>
+
             </div>
         </section>
 
@@ -242,8 +283,6 @@
             </div>
 
         </section>
-
-
 
         <!-- Section de localisation -->
         <section class="mx-3 my-4 overflow-hidden rounded-lg border border-[#f0e5d9] bg-[#fffaf5]">
