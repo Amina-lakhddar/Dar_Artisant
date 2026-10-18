@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+@theme {
 .test-bg {
     background-image: url("../images/bolmaroc.jpg");
     background-size: cover;
@@ -7,6 +9,7 @@
     height: 100px;
   }
 @theme{
+
   --color-primary: #244331;
   --color-secondary: #A8441D;
   --color-background: #F8F1E7;
