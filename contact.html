@@ -1,260 +1,639 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact - Dar L'Artisan</title>
+
     <meta name="description"
+
         content="Contactez Dar L'Artisan pour toute question concernant nos produits artisanaux marocains.">
-    <link rel="stylesheet" href="./output.css">
+
+    <link rel="stylesheet" href="./src/output.css">
+
 </head>
-<body>
+
+<body class="bg-white">
+
     <!--========================= header ================================-->
-    <header>
+
+    <header class="flex items-center w-full p-4 px-0 mx-0 gap-17 h-17 ">
+
         <!-- Logo -->
-        <a href="index.html" class="logo">
-            <img src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
-            <span>Dar L’Artisan</span>
-            <p>artisanat marocain</p>
+
+        <a href="index.html" class="flex w-full hover:scale-102 transition-transform" >
+
+            <img class="h-11 w-11 mx-1" src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
+
+            <div class="flex flex-col w-full">
+
+                <p class="text-lg font-bold">Dar L’Artisan</p>
+
+                <p class="text-gray-600">artisanat marocain</p>
+
+            </div>
+
         </a>
-        
+
         <!-- Icons -->
-        <div class="header-icons">
+
+        <div class="flex gap-3 justify-end items-center w-2/3 ml-auto">
 
             <!-- Search: décoration uniquement -->
-            <img src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt="">
+
+            <a href="#search" class="hover:scale-110 transition-transform"><img class="w-7 h-7" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt=""></a>
 
             <!-- User: décoration uniquement -->
-            <img src="./images/109338-removebg-preview.png" alt="">
+
+            <a href="panier.html" class="hover:scale-110 transition-transform"><img class="w-10 h-10" src="./images/109338-removebg-preview.png" alt=""></a>
 
             <!-- Menu cliquable -->
-            <details class="menu">
+
+            <details class="cursor-pointer">
+
                 <summary aria-label="Ouvrir le menu">
-                    <img class="" src="./images/list-square-bullet-icon.svg" alt="" width="23" height="23">
+
+                    <img class="w-7 h-7" src="./images/list-square-bullet-icon.svg">
+
                 </summary>
-                <nav aria-label="Navigation principale">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="catalogue.html">Catalogue</a></li>
-                        <li><a href="apropos.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+
+                <nav aria-label="Navigation principale " class="absolute right-0 mt-2 w-25 bg-background border border-gray-300 rounded-md ">
+
+                    <a class="block p-2 hover:bg-gray-200" href="index.html">Accueil</a>
+
+                    <a class="block p-2 hover:bg-gray-200" href="catalogue.html">Catalogue</a>
+
+                    <a class="block p-2 hover:bg-gray-200" href="about.html">À propos</a>
+
+                    <a class="block p-2 hover:bg-gray-200" href="contact.html">Contact</a>
+
                 </nav>
 
             </details>
+
         </div>
+
     </header>
+
     <!--================== main=================================-->
+
     <main>
-        <!---section d'indtroduction -->
-        <section class="contact-hero">
-            <div class="contact-hero__text">
-                <h1>Contactez-nous</h1>
-                <p>
-                    Une question, une demande particulière
-                    ou simplement envie de nous écrire ?
-                    Nous sommes là pour vous répondre.
-                </p>
+
+        <!---section d'introduction -->
+
+        <section class="bg-background bg-cover bg-center px-4 py-2 w 2/3"
+
+            style="background-image: linear-gradient(to right, #fffaf5 0%, rgba(255,250,245,0) 65%), url('./images/Lumière marocaine sur table artisanale.png');">
+
+            <div class="flex flex-col gap-3">
+
+            <h1 class=" font-serif text-2xl font-bold text-black">Contactez-nous</h1>
+
+            <p class="text-sm  text-black w-2/3">
+
+                Une question, une demande particulière
+
+                ou simplement envie de nous écrire ?
+
+                Nous sommes là pour vous répondre.
+
+            </p>
+
             </div>
-            <div class="contact-hero__img" aria-hidden="true"></div>
-        </section>
-        <!-- section du formulaire -->
-        <section class="contact-form">
-            <h2>envoyez-nous un message</h2>
-            <p class="contact-form_descrition"></p>
-            <form class="contact-form" action="#" method="post">
-                <!---- nom complet-->
-                <div class="form-group">
-                    <label for="nom"> nom complet</label><span>*</span>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                </div>
-                <!----e-mail  -->
-                <div class="form-group">
-                    <label for="email">E-mail<span>*</span></label>
-                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-                </div>
-                <!---- Message-->
-                <div class="form-group">
-                    <label for="message"> Message<span>*</span></label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <!----- Bouton enboyez-->
-                <button type="submit" class="envoyez-button" ">
-                        <span><img src=" ./images/send-icon.png" alt=""></span>
-                    Envoyer le message
-                    <span aria-hidden="true">→</span>
-                </button>
-                <p class="contact-privacy">
-                    <span aria-hidden="true"><img src="./images/lock-icon.svg" </span>
-                        Vos informations sont protégées et ne seront jamais partagées.
-                </p>
-            </form>
+
         </section>
 
-        <!-- Section des coordonnées -->
-        <section class="contact-info-section">
+        <!-- Section du formulaire -->
 
-            <h2>Nos coordonnées</h2>
-            <!----LIST DE COORDONNEES-->
-            <div class="contact-info-list">
+        <section class="mx-4 my-3 px-4 py-5 bg-background border border-black rounded-md">
 
-                <!-- Téléphone -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/phone-call-icon.svg" alt="">
-                    </div>
+            <h2 class="font font-serif text-2xl font-bold ">
 
-                    <div class="contact-info-content">
-                        <h3>Téléphone</h3>
-                        <p>+212 6 12 34 56 78</p>
-                        <p>Du lundi au vendredi, 9h - 18h</p>
-                    </div>
+                Envoyez-nous un message
+
+            </h2>
+
+            <p class="mt-5 text-xm">
+
+                Remplissez le formulaire ci-dessous, nous vous répondrons
+
+                dans les plus brefs délais.
+
+            </p>
+
+            <form action="#" method="post" class="mt-5 grid grid-cols-1 gap-x-4 gap-y-5 md:grid-cols-2 ">
+
+                <!-- Nom complet -->
+
+                <div class="flex flex-col gap-1.5">
+
+                    <label for="nom" class="text-sm font-semibold ">
+
+                        Nom complet <span class="text-red-600">*</span>
+
+                    </label>
+
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required
+
+                        class="border border-black bg-white rounded-md px-4 py-3 placeholder:text-gray-600 focus:border-[#b53213] focus:outline-none focus:ring-1 focus:ring-[#b53213]">
+
                 </div>
 
                 <!-- E-mail -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/envelope-icon.svg" alt="">
-                    </div>
 
-                    <div class="contact-info-content">
-                        <h3>E-mail</h3>
-                        <p>contact@darlartisan.ma</p>
-                        <p>Nous répondons sous 24h.</p>
-                    </div>
+                <div class="flex flex-col gap-1.5">
+
+                    <label for="email" class="text-sm font-semibold">
+
+                        E-mail <span class="text-red-600">*</span>
+
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required
+
+                        class="border border-black bg-white rounded-md px-4 py-3 placeholder:text-gray-600 focus:border-[#b53213] focus:outline-none focus:ring-1 focus:ring-[#b53213]">
+
                 </div>
 
-                <!-- Adresse -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/pin-location-icon.svg" alt="">
-                    </div>
+                <!-- Message -->
 
-                    <div class="contact-info-content">
-                        <h3>Adresse</h3>
-                        <p>Safi, Maroc</p>
-                    </div>
+                <div class="flex flex-col gap-1.5 md:col-span-2">
+
+                    <label for="message" class="text-sm font-semibold">
+
+                        Message <span class="text-red-600">*</span>
+
+                    </label>
+
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message..." required
+
+                        class="w-full resize-y border border-black bg-white rounded-md px-4 py-3 placeholder:text-gray-600 focus:border-[#b53213] focus:outline-none focus:ring-1 focus:ring-[#b53213]"></textarea>
+
                 </div>
 
-                <!-- Horaires -->
-                <div class="contact-info-item">
-                    <div class="contact-info-icon" aria-hidden="true">
-                        <img src="./images/clock-icon.svg" alt="">
+            </form>
+
+            <!-- Bouton Envoyer -->
+
+            <button type="submit"
+
+                class="w-full my-3 border items-center flex justify-center gap-3 rounded-md bg-[#B53213] px-4 py-2 font-semibold text-white transition hover:bg-[#92280f] hover:scale-102 transition-transform">
+
+                <img src="./images/send-icon.png" alt="" class="w-5 h-5 object-contain">
+
+                <span>Envoyer le message</span>
+
+                <span aria-hidden="true">→</span>
+
+            </button>
+
+            <!-- Confidentialité -->
+
+            <p class="flex justify-center gap-2 text-center">
+
+                <img src="./images/lock-icon.svg" alt="" class="w-4 h-4">
+
+                <span>
+
+                    Vos informations sont protégées et ne seront jamais partagées.
+
+                </span>
+
+            </p>
+
+        </section>
+
+        <!-- Section des coordonnées -->
+
+        <section class="mx-3 my-3 p-4 border border-black bg-background bo rounded-lg">
+
+            <!-- Titre -->
+
+            <h2 class="mb-3 font-serif text-2xl font-bold ">
+
+                Nos coordonnées
+
+            </h2>
+
+            <!-- Liste des coordonnées -->
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+                <div class="flex flex-col gap-3 divide-y divide-black">
+
+                    <!-- Téléphone -->
+
+                    <div class="flex items-center gap-4 py-3">
+
+                        <div>
+
+                            <img src="./images/phone-call-icon.svg" alt="" class="h-10 w-10 ">
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-semibold">Téléphone</h3>
+
+                            <p>+212 6 12 34 56 78</p>
+
+                            <p>
+
+                                Du lundi au vendredi, 9h - 18h
+
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <div class="contact-info-content">
-                        <h3>Horaires</h3>
-                        <p>Lundi - Vendredi : 9h - 18h</p>
-                        <p>Samedi : 9h - 13h</p>
+                    <!-- E-mail -->
+
+                    <div class="flex items-center gap-4 py-3">
+
+                        <div>
+
+                            <img src="./images/envelope-icon.svg" alt="" class="w-10 h-10">
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-semibold">E-mail</h3>
+
+                            <p>
+
+                                contact@darlartisan.ma
+
+                            </p>
+
+                            <p>
+
+                                Nous répondons sous 24h.
+
+                            </p>
+
+                        </div>
+
                     </div>
+
+                    <!-- Adresse -->
+
+                    <div class="flex items-center gap-4 py-3">
+
+                        <div>
+
+                            <img src="./images/pin-location-icon.svg" alt="" class="w-10 h-10">
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-semibold">Adresse</h3>
+
+                            <p>Safi, Maroc</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Horaires -->
+
+                    <div class="flex item-center gap-4 py-3">
+
+                        <div>
+
+                            <img src="./images/clock-icon.svg" alt="" class="w-10 h-10 ">
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-semibold">Horaires</h3>
+
+                            <p>
+
+                                Lundi - Vendredi : 9h - 18h
+
+                            </p>
+
+                            <p>
+
+                                Samedi : 9h - 13h
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- contenu social -->
+
+                    <div class="flex item-center gap-4 py-3">
+
+                        <div>
+
+                            <img src="./images/share-icon.svg" alt="" class="w-10 h-10">
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-xl font-semibold">suivez-nous</h3>
+
+                            <p>
+
+                                Rejoignez notre communauté et découvrez nos nouveautés.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Partie droite : image -->
+
+                </div>
+
+                <div class=" hidden lg:block">
+
+                    <img src="./images/Nature morte marocaine aux poteries artisanales.png"
+
+                        alt="Artisanat traditionnel marocain" class="h-[420px] w-full rounded-xl object-cover">
+
                 </div>
 
             </div>
 
-            <!-- Réseaux sociaux -->
-            <div class="contact-social-section">
-                <div class="contact-info-icon" aria-hidden="true">
-                    <img src="./images/share-icon.svg" alt="">
-                </div>
+            <!-- Liens sociaux -->
 
-                <div class="contact-social-content">
-                    <h3>Suivez-nous</h3>
-                    <p>
-                        Rejoignez notre communauté et découvrez nos nouveautés.
-                    </p>
-                    <!----social links -->
-                    <div class="contact-social-links">
-                        <a href="#" aria-label="Instagram">
-                            <img src="./images/black-instagram-icon.svg" alt="">
-                        </a>
+            <div class="flex items-center gap-3  mt-3 ml-3">
 
-                        <a href="#" aria-label="Facebook">
-                            <img src="./images/facebook-square-black-icon.svg" alt="">
-                        </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
 
-                        <a href="#" aria-label="X">
-                            <img src="./images/x-social-media-black-icon.svg" alt="">
-                        </a>
+                    <img src="./images/black-instagram-icon.svg" alt="" class="w-7 h-7">
 
-                        <a href="#" aria-label="YouTube">
-                            <img src="./images/youtube-icon.svg" alt="">
-                        </a>
-                    </div>
-                </div>
+                </a>
+
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+
+                    <img src="./images/facebook-square-black-icon.svg" alt="" class="w-7 h-7">
+
+                </a>
+
+                <a href="https://www.x.com/" aria-label="X">
+
+                    <img src="./images/x-social-media-black-icon.svg" alt="" class="w-7 h-7">
+
+                </a>
+
+                <a href="https://www.youtube.com/" aria-label="YouTube">
+
+                    <img src="./images/youtube-icon.svg" alt="" class="w-7 h-7">
+
+                </a>
+
             </div>
+
+            </div>
+
         </section>
 
         <!-- Section de localisation -->
-        <section class="contact-location-section">
+
+        <section class="mx-3 my-4 overflow-hidden rounded-lg border border-[#f0e5d9] bg-[#fffaf5]">
 
             <!-- Carte et localisation -->
-            <div class="contact-map">
-                <img src="./images/Carte pastel de Safi et ses environs.png" alt="Carte de localisation de notre boutique à Safi">
+
+            <div class="w-full">
+
+                <img src="./images/Carte pastel de Safi et ses environs.png"
+
+                    alt="Carte de localisation de notre boutique à Safi" class="block h-56 w-full object-cover">
+
             </div>
 
-            <div class="shop-content">
-                <spam><img src="./images/shopping-bag-minus-sign-black-icon.svg"></spam>
-                <h2>Notre boutique</h2>
+            <!-- Contenu de la boutique -->
 
-                <p>
+            <div class="flex flex-col items-start gap-3 p-4">
+
+                <!-- Icône et titre -->
+
+                <div class="flex items-center gap-3">
+
+                    <img src="./images/shopping-bag-minus-sign-black-icon.svg" alt=""
+
+                        class="h-7 w-7 shrink-0 object-contain">
+
+                    <h2 class="font-serif text-2xl font-bold text-[#171717]">
+
+                        Notre boutique
+
+                    </h2>
+
+                </div>
+
+                <!-- Description -->
+
+                <p class="text-sm leading-6 text-[#66717e]">
+
                     Venez nous rendre visite à Safi et découvrez
+
                     nos créations artisanales en personne.
+
                 </p>
 
-                <button type="button" class="google-maps-button">
-                    <img src="./images/pin-location-icon.svg" alt="">
+                <!-- Bouton Google Maps -->
+
+                <a href="https://www.google.com/maps/place/Safi,+Maroc" target="_blank" rel="noopener noreferrer"
+
+                    class="w-full my-3 border items-center flex justify-center gap-3 rounded-md bg-[#B53213] px-4 py-2 font-semibold text-white transition hover:bg-[#92280f] hover:scale-102 transition-transform">
+
+                    <img src="./images/pin-location-icon.svg" alt=""
+
+                        class="h-5 w-5 shrink-0 object-contain brightness-0 invert">
+
                     <span>Voir sur Google Maps</span>
-                    <span aria-hidden="true">→</span>
-                </button>
+
+                    <span aria-hidden="true" class="text-xl">→</span>
+
+                </a>
+
             </div>
 
+        </section>
+
     </main>
-    <footer class="bg-[#244331] text-white flex flex-col items-center justify-center gap-8 p-8 mt-10">
-                <div class="flex md:flex-row justify-center gap-8 ">
-                    <div class="flex flex-col justify-center gap-4">
-                        <div class="flex justify-center gap-4">
-                            <a class="hover:scale-105" href="index.html"><img class="w-20 h-20" src="./images/logo-white-Darartisan.png" alt="Logo Dar l'Artisan"></a>
-                            <div>
-                                <h2>Dar l'Artisan</h2>
-                                <p>Artisanat marocain</p>
-                            </div>
-                        </div>    
-                        <p>Des créations uniques, pour un quotidien plus chaleureux.</p>
-                        <div class="flex  justify-center gap-6 mt-4">
-                            <a class="hover:scale-105" href="https://www.instagram.com/darlartisan/" target="_blank"><img class="w-7 h-7" src="./images/instagram-white-icon.png" alt="Instagram"></a>
-                            <a class="hover:scale-105" href="https://www.facebook.com/darlartisan/" target="_blank"><img class="w-7 h-7" src="./images/facebook-app-round-white-icon.png" alt="Facebook"></a>
-                            <a class="hover:scale-105" href="https://twitter.com/darlartisan" target="_blank"><img class="w-7 h-7" src="./images/x-social-media-white-icon.png" alt="Twitter"></a>
-                            <a class="hover:scale-105" href="https://www.youtube.com/darlartisan" target="_blank"><img class="w-7 h-7" src="./images/youtube-app-white-icon.png" alt="YouTube"></a>
-                        </div>
+
+    <footer class="bg-[#244331] text-white text-sm">
+
+        <!-- Main footer content -->
+
+        <div class="max-w-6xl mx-auto px-4 py-10
+
+              grid grid-cols-1 gap-8
+
+              md:grid-cols-2 md:gap-10
+
+              lg:grid-cols-4 lg:gap-8">
+
+            <!-- 1. Brand + Social -->
+
+            <div class="flex flex-col items-center text-center
+
+                md:items-start md:text-left gap-4">
+
+                <a href="index.html" class="flex items-center gap-3">
+
+                    <img src="./images/logo-white-Darartisan.png" alt="Logo" class="w-12 h-12">
+
+                    <div>
+
+                        <h2 class="text-lg font-semibold">Dar l'Artisan</h2>
+
+                        <p class="text-xs text-gray-300">Artisanat marocain</p>
+
                     </div>
-                    <div class="flex flex-col justify-center gap-4">
-                        <h3>Navigation</h3>
-                        <a class="hover:scale-105" href="index.html">Accueil</a>
-                        <a class="hover:scale-105" href="catalogue.html">Catalogue</a>
-                        <a class="hover:scale-105" href="about.html">À propos</a>
-                        <a class="hover:scale-105" href="contact.html">Contact</a>
-                    </div>
-                    <div class="flex flex-col  justify-center gap-4">
-                        <h3>Informations</h3>
-                        <a class="hover:scale-105" href="#">Livraison</a>
-                        <a class="hover:scale-105" href="#">Retours</a>
-                        <a class="hover:scale-105" href="#">Paiement sécurisé</a>
-                        <a class="hover:scale-105" href="#">FAQ</a>
-                    </div>
-                    <div class="flex flex-col justify-center gap-5">
-                        <h3>Contact</h3>
-                        <a class="flex justify-center gap-2 hover:scale-105" href="tel:+212612345678"><img class="w-7 h-7" src="./images/phone-call-white-icon.png" alt="Téléphone">+212 6 12 34 56 78</a>
-                        <a class="flex justify-center gap-2 hover:scale-105" href="mailto:contact@darlartisan.ma"><img class="w-7 h-7" src="./images/email-envelope-white-icon.png" alt="Email">contact@darlartisan.ma</a>
-                        <a class="flex justify-center gap-2 hover:scale-105" href="https://www.google.com/maps/place/Safi,+Maroc/" target="_blank"><img class="w-7 h-7" src="./images/location-pointer-white-icon.png" alt="Adresse">Safi, Maroc</a>
-                    </div>
+
+                </a>
+
+                <p class="text-gray-300 text-sm max-w-xs">
+
+                    Des créations uniques, pour un quotidien plus chaleureux.
+
+                </p>
+
+                <!-- Social icons -->
+
+                <div class="flex gap-4 mt-2">
+
+                    <a href="https://www.instagram.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
+
+                        <img src="./images/instagram-white-icon.png" class="w-6 h-6" alt="Instagram">
+
+                    </a>
+
+                    <a href="https://www.facebook.com/darlartisan/" target="_blank" class="hover:scale-110 transition">
+
+                        <img src="./images/facebook-app-round-white-icon.png" class="w-6 h-6" alt="Facebook">
+
+                    </a>
+
+                    <a href="https://twitter.com/darlartisan" target="_blank" class="hover:scale-110 transition">
+
+                        <img src="./images/x-social-media-white-icon.png" class="w-6 h-6" alt="X">
+
+                    </a>
+
+                    <a href="https://www.youtube.com/darlartisan" target="_blank" class="hover:scale-110 transition">
+
+                        <img src="./images/youtube-app-white-icon.png" class="w-6 h-6" alt="YouTube">
+
+                    </a>
+
                 </div>
-                <div class="flex justify-center gap-4 bt-2 border-t py-4">
-                    <p class="text-center mr-80">&copy; 2026 Dar l'Artisan. Tous droits réservés.</p>
-                    <a class="hover:scale-105" href="#">Conditions générales</a>
-                    <a class="hover:scale-105" href="#">Politique de confidentialité</a>
+
+            </div>
+
+            <!-- 2. Navigation -->
+
+            <div class="flex flex-col items-center text-center
+
+                md:items-start md:text-left gap-3">
+
+                <h3 class="font-semibold text-base mb-1">Navigation</h3>
+
+                <a href="index.html" class="hover:text-amber-300 transition">Accueil</a>
+
+                <a href="catalogue.html" class="hover:text-amber-300 transition">Catalogue</a>
+
+                <a href="about.html" class="hover:text-amber-300 transition">À propos</a>
+
+                <a href="contact.html" class="hover:text-amber-300 transition">Contact</a>
+
+            </div>
+
+            <!-- 3. Informations -->
+
+            <div class="flex flex-col items-center text-center
+
+                md:items-start md:text-left gap-3">
+
+                <h3 class="font-semibold text-base mb-1">Informations</h3>
+
+                <a href="#" class="hover:text-amber-300 transition">Livraison</a>
+
+                <a href="#" class="hover:text-amber-300 transition">Retours</a>
+
+                <a href="#" class="hover:text-amber-300 transition">Paiement sécurisé</a>
+
+                <a href="#" class="hover:text-amber-300 transition">FAQ</a>
+
+            </div>
+
+            <!-- 4. Contact -->
+
+            <div class="flex flex-col items-center text-center
+
+                md:items-start md:text-left gap-3">
+
+                <h3 class="font-semibold text-base mb-1">Contact</h3>
+
+                <a href="tel:+212612345678" class="flex items-center gap-2 hover:text-amber-300 transition">
+
+                    <span>📞</span> +212 6 12 34 56 78
+
+                </a>
+
+                <a href="mailto:contact@darlartisan.ma" class="flex items-center gap-2 hover:text-amber-300 transition">
+
+                    <span>✉️</span> contact@darlartisan.ma
+
+                </a>
+
+                <a href="https://www.google.com/maps/place/Safi,+Maroc" target="_blank"
+
+                    class="flex items-center gap-2 hover:text-amber-300 transition">
+
+                    <span>📍</span> Safi, Maroc
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom bar -->
+
+        <div class="border-t border-white/20">
+
+            <div class="max-w-6xl mx-auto px-4 py-4
+
+                flex flex-col items-center gap-2 text-xs text-gray-300
+
+                md:flex-row md:justify-between">
+
+                <p>© 2026 Dar l'Artisan. Tous droits réservés.</p>
+
+                <div class="flex gap-4">
+
+                    <a href="#" class="hover:text-white transition">Conditions générales</a>
+
+                    <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+
                 </div>
-            </footer>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
