@@ -11,41 +11,99 @@
 <body class="bg-background text-xs w-full
     md:text-lg
     lg: text-xl">
-    <!--========================= header ================================-->
-    <header class="flex items-center w-full p-4 px-0 mx-0 gap-17 h-17 ">
-        <!-- Logo -->
-        <a href="index.html" class="flex w-full hover:scale-102 transition-transform" >
-            <img class="h-11 w-11 mx-1" src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png" alt="Dar L’Artisan">
-            <div class="flex flex-col w-full">
-                <p class="text-lg font-bold">Dar L’Artisan</p>
-                <p class="text-gray-600">artisanat marocain</p>
-            </div>   
-        </a>
-        
-        <!-- Icons -->
-        <div class="flex gap-3 justify-end items-center w-2/3 ml-auto">
+    <!-- Header -->
+<header class="flex w-full items-center justify-between gap-3 px-3 py-3 sm:px-5 lg:px-8">
 
-            <!-- Search: décoration uniquement -->
-            <a href="#search" class="hover:scale-110 transition-transform"><img class="w-7 h-7" src="./images/Screenshot_2026-10-12_142606-removebg-preview.png" alt=""></a>
+    <!-- Logo -->
+    <a href="index.html"
+       class="flex min-w-0 shrink items-center gap-2">
 
-            <!-- User: décoration uniquement -->
-            <a href="panier.html" class="hover:scale-110 transition-transform"><img class="w-10 h-10" src="./images/109338-removebg-preview.png" alt=""></a>
+        <img
+            class="h-10 w-10 shrink-0 sm:h-11 sm:w-11"
+            src="./images/Emblème_arabesque_terracotta_symétrique-removebg-preview.png"
+            alt="Dar L’Artisan"
+        >
 
-            <!-- Menu cliquable -->
-            <details class="cursor-pointer">
-                <summary aria-label="Ouvrir le menu">
-                    <img class="w-7 h-7" src="./images/list-square-bullet-icon.svg">
-                </summary>
-                <nav aria-label="Navigation principale " class="absolute right-0 mt-2 w-25 bg-background border border-gray-300 rounded-md ">
-                    <a class="block p-2 hover:bg-gray-200" href="index.html">Accueil</a>
-                    <a class="block p-2 hover:bg-gray-200" href="catalogue.html">Catalogue</a>
-                    <a class="block p-2 hover:bg-gray-200" href="about.html">À propos</a>
-                    <a class="block p-2 hover:bg-gray-200" href="contact.html">Contact</a>
-                </nav>
-
-            </details>
+        <div class="min-w-0">
+            <p class="text-sm font-bold sm:text-lg">
+                Dar L’Artisan
+            </p>
+            <p class="text-xs text-gray-600 sm:text-sm">
+                artisanat marocain
+            </p>
         </div>
-    </header>
+    </a>
+
+    <!-- Navigation: PC uniquement -->
+    <nav class="hidden items-center gap-5 lg:flex xl:gap-8"
+         aria-label="Navigation principale">
+
+        <a href="index.html" class="hover:text-[#B53213]">Accueil</a>
+        <a href="catalogue.html" class="hover:text-[#B53213]">Catalogue</a>
+        <a href="about.html" class="hover:text-[#B53213]">À propos</a>
+        <a href="contact.html" class="hover:text-[#B53213]">Contact</a>
+
+    </nav>
+
+    <!-- Icons -->
+    <div class="ml-auto flex shrink-0 items-center gap-2 sm:gap-4 lg:ml-0">
+
+        <!-- Search -->
+        <a href="#search"
+           class="transition-transform hover:scale-110"
+           aria-label="Recherche">
+            <img
+                class="h-6 w-6 sm:h-7 sm:w-7"
+                src="./images/Screenshot_2026-10-12_142606-removebg-preview.png"
+                alt=""
+            >
+        </a>
+
+        <!-- Panier -->
+        <a href="panier.html"
+           class="transition-transform hover:scale-110"
+           aria-label="Panier">
+            <img
+                class="h-8 w-8 sm:h-10 sm:w-10"
+                src="./images/shopping-color-icon.png"
+                alt="shopping cart icon"
+            >
+        </a>
+
+        <!-- Menu -->
+        <details class="relative shrink-0">
+
+            <summary class="cursor-pointer list-none"
+                     aria-label="Ouvrir le menu">
+                <img
+                    class="h-6 w-6 sm:h-7 sm:w-7"
+                    src="./images/list-square-bullet-icon.svg"
+                    alt=""
+                >
+            </summary>
+
+            <nav
+                aria-label="Menu mobile"
+                class="absolute right-0 top-full z-50 mt-2 w-40 rounded-md border border-gray-300 bg-background shadow-md"
+            >
+                <a class="block p-2 hover:bg-gray-200"
+                   href="index.html">Accueil</a>
+
+                <a class="block p-2 hover:bg-gray-200"
+                   href="catalogue.html">Catalogue</a>
+
+                <a class="block p-2 hover:bg-gray-200"
+                   href="about.html">À propos</a>
+
+                <a class="block p-2 hover:bg-gray-200"
+                   href="contact.html">Contact</a>
+            </nav>
+
+        </details>
+
+    </div>
+
+</header>
 
     <main>
         <div>
@@ -54,9 +112,9 @@
 
             <div class="bg-[url('../images/moroccan-artisan-backg.jpg')] h-42 bg-cover w-full bg-center my-4 mt-1
                 md:h-72 lg:h-96">
-                <div class="bg-gradient-to-r from-[#F5E6D3] via-[#f5f0e6]/85 to-transparent w-3/4 h-full">
-                    <h1 class="text-2xl font-bold text-gray-800 p-4">Votre Panier</h1>
-                    <p class="text-gray-700 h-full p-3 w-2/3">Vérifier vos articles avant de passer votre commande</p>
+                <div class="bg-gradient-to-r from-[#F5E6D3] via-[#f5f0e6]/85 to-transparent w-3/4 h-full md:py-10 lg:py-20">
+                    <h1 class="text-2xl font-bold text-gray-800 p-4 md:text-4xl">Votre Panier</h1>
+                    <p class="text-gray-700 h-full p-3 w-2/3 md:text-2xl">Vérifier vos articles avant de passer votre commande</p>
                 </div>
             </div>
 

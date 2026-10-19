@@ -266,6 +266,11 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+
+  .mt-0 {
+    margin-top: 0px;
+  }
+
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
   }
@@ -367,6 +372,11 @@
   }
   .h-48 {
     height: calc(var(--spacing) * 48);
+
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+
   }
   .h-60 {
     height: calc(var(--spacing) * 60);
@@ -428,6 +438,11 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+
   .w-full {
     width: 100%;
   }
@@ -454,6 +469,13 @@
   }
   .min-w-0 {
     min-width: 0px;
+  }
+
+  .flex-shrink {
+
+  .shrink {
+
+    flex-shrink: 1;
   }
   .shrink {
     flex-shrink: 1;
@@ -540,6 +562,11 @@
   }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
+
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
+
   }
   :where(.divide-y > :not(:last-child)) {
     --tw-divide-y-reverse: 0;
@@ -765,6 +792,9 @@
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
   .text-center {
     text-align: center;
   }
@@ -895,6 +925,15 @@
   }
   .text-yellow-500 {
     color: var(--color-yellow-500);
+  }
+
+  .underline {
+    text-decoration-line: underline;
+
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+
   }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1199,6 +1238,11 @@
     .md\:px-16 {
       padding-inline: calc(var(--spacing) * 16);
     }
+
+    .md\:py-10 {
+      padding-block: calc(var(--spacing) * 10);
+    }
+
     .md\:py-12 {
       padding-block: calc(var(--spacing) * 12);
     }
@@ -1213,6 +1257,12 @@
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
+
+    .md\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+
     .md\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -1293,6 +1343,11 @@
     .lg\:py-14 {
       padding-block: calc(var(--spacing) * 14);
     }
+
+    .lg\:py-20 {
+      padding-block: calc(var(--spacing) * 20);
+    }
+
     .lg\:text-5xl {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -1310,13 +1365,6 @@
       gap: calc(var(--spacing) * 8);
     }
   }
-}
-.test-bg {
-  background-image: url("../images/bolmaroc.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  height: 100px;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
